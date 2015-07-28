@@ -1,56 +1,287 @@
-<!DOCTYPE html>
 <html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <head>
-  <% include ../partials/header.ejs %>
+    <style>
+        .bigBoard{
+            width: 610px;
+        }
+        .board{
+            width: 200px;
+            height: 220px;
+            border: 1px solid black;
+            float:left;
+
+        }
+
+        .piece{
+            width: 63px;
+            height: 63px;
+            margin-bottom: 2px;
+            border: 1px solid black;
+            float:left;
+        }
+        .disabled{
+            opacity: 0.5;
+        }
+        .piece.player1 {
+            background-color: #ff0000;
+        }
+        .piece.player2 {
+            background-color:#0000ff;
+        }
+    </style>
 </head>
-
 <body>
-
-  <% include ../partials/nav.ejs %>
-
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="/lang-logo.png">
-    </a>
-    <h1>Getting Started with Node on Heroku</h1>
-    <p>This is a sample Node application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-nodejs"><span class="glyphicon glyphicon-flash"></span> Getting Started with Node</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/node-js-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
-  </div>
-</div>
-<div class="container">
-  <div class="alert alert-info text-center" role="alert">
-    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs" class="alert-link">Getting Started with Node on Heroku</a> tutorial.
-  </div>
-  <hr>
-  <div class="row">
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/node-js-getting-started">Heroku Button</a> on the repository.</li>
-
-        <li>When Heroku received the source code, it grabbed all the dependencies in the <a href="https://github.com/heroku/node-js-getting-started/blob/master/package.json">package.json</a>.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-        <li>Check out the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started</a> guide to learn more!</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
-      <ul>
-        <li><a href="https://www.heroku.com/home">Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started with Node on Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/deploying-nodejs">Deploying Node Apps on Heroku</a></li>
-      </ul>
-    </div>
-  </div> <!-- row -->
-   <div class="alert alert-info text-center" role="alert">
-    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
-  </div>
-</div>
-
-
+<div class="bigBoard"></div>
 </body>
+<script>
+    var total = 0;
+    var totalMove = 0;
+    var totalScore = 0;
+    var bigBoardScore = 0;
+    //console.log('totalScore' + totalScore)
+    for(var index = 0; index < 9; index++){
+        $('.bigBoard').append('<div class="board"></div>')
+    }
+
+    for(var i = 0; i < 9; i++){
+        if(i == 0){
+            $('.board').append('<div class="message">Tic Tac Toe</div>');
+        }
+        $('.board').append('<div class="piece"></div>');
+    }
+
+    // return 0 if no winner, -1 if player 1, 1 if player 2
+    function findWinnerOfBoard(board) {
+        var score = 0;
+        for(var i = 0; i < 3; i++){
+            score = board[0][i];
+            score +=board[1][i];
+            score +=board[2][i];
+
+            if(score == -3){
+                return -1;
+            }
+            if(score == 3){
+                return 1;
+            }
+        }
+
+        score = 0;
+        for(var i = 0; i < 3; i++){
+            score = board[i][0];
+            score +=board[i][1];
+            score +=board[i][2];
+
+            if(score == -3){
+                return -1;
+            }
+            if(score == 3){
+                return 1;
+            }
+        }
+
+        score = board[0][0] + board[1][1] + board[2][2];
+        if(score == -3){
+            return -1;
+        }
+        if(score == 3){
+            return 1;
+        }
+
+        score = board[0][2] + board[1][1] + board[2][0];
+        if(score == -3){
+            return -1;
+        }
+        if(score == 3){
+            return 1;
+        }
+
+        return 0;
+    }
+
+    function findWinner(){
+        var bigBoard = [[0,0,0],[0,0,0],[0,0,0]];
+        //console.log('hit...', $('.board'))
+        //totalScore = 0;
+        $('.board').each(function(boardIndex){
+
+
+            if(totalScore == 9){
+                $('.message').text("gamer draw");
+            }
+
+            var score = 0;
+
+
+        });
+
+        /*$('.piece').each(function(index,piece){
+         var i = index%3;
+         var j = Math.floor(index/3);
+         if($(piece).hasClass('player1')){
+         $('.message').text("player2 move");
+         board[i][j] = -1;
+         totalScore++;
+         }
+         if($(piece).hasClass('player2')){
+         $('.message').text("player1 move");
+         board[i][j] = 1;
+         totalScore++;
+
+         }
+         });*/
+
+        var score = 0;
+        for(var i = 0; i < 3; i++){
+            score = bigBoard[i][0];
+            score +=bigBoard[i][1];
+            score +=bigBoard[i][2];
+
+            if(score == -3){
+                $('.message').text("player1 win");
+                //$board.addClass('winner');
+                //console.log("horizontally win")
+                return;
+            }
+            if(score == 3){
+                $('.message').text("player2 win");
+                $board.addClass('winner');
+                return;
+            }
+        }
+
+        for(var i = 0; i < 3; i++){
+            score = bigBoard[0][i];
+            score +=bigBoard[1][i];
+            score +=bigBoard[2][i];
+
+            if(score == -3){
+                $('.message').text("player1 win");
+                //$board.addClass('winner');
+                console.log("horizontally win")
+                return;
+            }
+            if(score == 3){
+                $('.message').text("player2 win");
+                //$board.addClass('winner');
+                return;
+            }
+        }
+
+        score = bigBoard[0][0] + bigBoard[1][1] + bigBoard[2][2];
+        if(score == -3){
+            $('.message').text("player1 win");
+            //$board.addClass('winner');
+            //console.log("horizontally win")
+            return;
+        }
+        if(score == 3){
+            $('.message').text("player2 win");
+            //$board.addClass('winner');
+            return;
+        }
+
+        score = bigBoard[0][2] + bigBoard[1][1] + bigBoard[2][0];
+        if(score == -3){
+            $('.message').text("player1 win");
+            //$board.addClass('winner');
+            //console.log("horizontally win")
+            return;
+        }
+        if(score == 3){
+            $('.message').text("player2 win");
+            //$board.addClass('winner');
+            return;
+        }
+    }
+
+
+    $('.piece').on('click',function(){
+        // Step #1 - if piece is clicked
+        var $piece = $(this);
+        if($piece.parent().hasClass('disabled')) {
+            return;
+        }
+
+        if($piece.hasClass('player1') || $piece.hasClass('player2')){
+            return;
+        }
+
+        $piece.addClass(total++ % 2 == 0 ? 'player1' : 'player2');
+
+        // Step #2 - find winner if winner is not set
+        findWinnerOfCurrentBoard($piece.parent());
+
+        // Step #3 - Find winner of big board
+        findWinnerOfBigBoard();
+
+        // Step #4 - Disable all boards
+        toggleBoards($piece.index());
+    });
+
+    function findWinnerOfCurrentBoard($board) {
+        if ($board.hasClass('player1') || $board.hasClass('player2'))
+            return;
+
+        var board = [[0,0,0],[0,0,0],[0,0,0]];
+        $board.find('.piece').each(function(index){
+            var i = index%3;
+            var j = Math.floor(index/3);
+            //console.log("i am here1");
+            if($(this).hasClass('player1')){
+                board[i][j] = -1;
+            }
+            if($(this).hasClass('player2')) {
+                board[i][j] = 1;
+            }
+        });
+
+        var winner = findWinnerOfBoard(board);
+        if (winner == 1) {
+            $board.addClass('player2');
+        }
+        else if (winner == -1) {
+            $board.addClass('player1')
+        }
+    }
+
+    function findWinnerOfBigBoard() {
+        var board = [[0,0,0],[0,0,0],[0,0,0]];
+        $('.board').each(function(index){
+            var i = index%3;
+            var j = Math.floor(index/3);
+            //console.log("i am here1");
+            if($(this).hasClass('player1')){
+                board[i][j] = -1;
+            }
+            if($(this).hasClass('player2')) {
+                board[i][j] = 1;
+            }
+        });
+
+        var winner = findWinnerOfBoard(board);
+        if (winner == 1) {
+            $board.addClass('player2')
+        }
+        else if (winner == -1) {
+            $board.addClass('player1')
+        }
+    }
+
+    function toggleBoards(pieceIndex) {
+        $('.board').each(function(index){
+            var $board = $(this);
+
+            //console.log($piece.index()-1  + "index: " + index);
+            if(!($board.hasClass('disabled'))){
+                $board.addClass('disabled');
+            }
+
+            if((pieceIndex - 1) == index){
+                $board.removeClass('disabled');
+            }
+        });
+    }
+</script>
 </html>
