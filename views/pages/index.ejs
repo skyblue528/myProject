@@ -100,101 +100,6 @@
         return 0;
     }
 
-    function findWinner(){
-        var bigBoard = [[0,0,0],[0,0,0],[0,0,0]];
-        //console.log('hit...', $('.board'))
-        //totalScore = 0;
-        $('.board').each(function(boardIndex){
-
-
-            if(totalScore == 9){
-                $('.message').text("gamer draw");
-            }
-
-            var score = 0;
-
-
-        });
-
-        /*$('.piece').each(function(index,piece){
-         var i = index%3;
-         var j = Math.floor(index/3);
-         if($(piece).hasClass('player1')){
-         $('.message').text("player2 move");
-         board[i][j] = -1;
-         totalScore++;
-         }
-         if($(piece).hasClass('player2')){
-         $('.message').text("player1 move");
-         board[i][j] = 1;
-         totalScore++;
-
-         }
-         });*/
-
-        var score = 0;
-        for(var i = 0; i < 3; i++){
-            score = bigBoard[i][0];
-            score +=bigBoard[i][1];
-            score +=bigBoard[i][2];
-
-            if(score == -3){
-                $('.message').text("player1 win");
-                //$board.addClass('winner');
-                //console.log("horizontally win")
-                return;
-            }
-            if(score == 3){
-                $('.message').text("player2 win");
-                $board.addClass('winner');
-                return;
-            }
-        }
-
-        for(var i = 0; i < 3; i++){
-            score = bigBoard[0][i];
-            score +=bigBoard[1][i];
-            score +=bigBoard[2][i];
-
-            if(score == -3){
-                $('.message').text("player1 win");
-                //$board.addClass('winner');
-                console.log("horizontally win")
-                return;
-            }
-            if(score == 3){
-                $('.message').text("player2 win");
-                //$board.addClass('winner');
-                return;
-            }
-        }
-
-        score = bigBoard[0][0] + bigBoard[1][1] + bigBoard[2][2];
-        if(score == -3){
-            $('.message').text("player1 win");
-            //$board.addClass('winner');
-            //console.log("horizontally win")
-            return;
-        }
-        if(score == 3){
-            $('.message').text("player2 win");
-            //$board.addClass('winner');
-            return;
-        }
-
-        score = bigBoard[0][2] + bigBoard[1][1] + bigBoard[2][0];
-        if(score == -3){
-            $('.message').text("player1 win");
-            //$board.addClass('winner');
-            //console.log("horizontally win")
-            return;
-        }
-        if(score == 3){
-            $('.message').text("player2 win");
-            //$board.addClass('winner');
-            return;
-        }
-    }
 
 
     $('.piece').on('click',function(){
@@ -251,7 +156,6 @@
         $('.board').each(function(index){
             var i = index%3;
             var j = Math.floor(index/3);
-            //console.log("i am here1");
             if($(this).hasClass('player1')){
                 board[i][j] = -1;
             }
@@ -262,10 +166,12 @@
 
         var winner = findWinnerOfBoard(board);
         if (winner == 1) {
-            $board.addClass('player2')
+            $('.message').text("player2 win");
+            $('.bigBoard').addClass("foundWinner");
         }
         else if (winner == -1) {
-            $board.addClass('player1')
+            $('.message').text("player1 win");
+            $('.bigBoard').addClass("foundWinner");
         }
     }
 
@@ -278,10 +184,14 @@
                 $board.addClass('disabled');
             }
 
-            if((pieceIndex - 1) == index){
+            if($('.bigBoard').hasClass('foundWinner')){
+                $board.addClass('disabled');
+            }else if((pieceIndex - 1) == index){
                 $board.removeClass('disabled');
             }
         });
     }
+
+
 </script>
 </html>
