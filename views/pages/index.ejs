@@ -2,6 +2,14 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <head>
     <style>
+        h1{
+            text-transform: uppercase;
+            text-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;;
+            padding-left:100px;
+        }
+        .text{
+            background: blueviolet url(/views/images/logo.png) top left no-repeat;
+        }
         .bigBoard{
             width: 610px;
         }
@@ -11,6 +19,14 @@
             border: 1px solid black;
             float:left;
 
+        }
+
+        .board.player1{
+            background: #ffffff url(images/minion.png) center center no-repeat;
+        }
+
+        .board.player2{
+            background: #ffffff url(images/minion2.png) center center no-repeat;
         }
 
         .piece{
@@ -32,7 +48,13 @@
     </style>
 </head>
 <body>
-<div class="bigBoard"></div>
+
+    <a href="/home.ejs"><button type="submit" class="btn btn-default">Home</button></a>
+    <a href="/home.ejs"><button type="submit" class="btn btn-default">about</button></a>
+    <div class="text">
+        <h1>Welcome to 9 By 9 Tic Tac Toe Game</h1>
+    </div>
+    <div class="bigBoard"></div>
 </body>
 <script>
     var total = 0;
