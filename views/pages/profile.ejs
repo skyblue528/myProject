@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <% include ../partials/header.ejs %>
+        <style>
+
+
+        </style>
+    </head>
+    <body>
+        <% include ../partials/nav.ejs %>
+        <img src="/minion.png" alt="Smiley face"></div>
+        <form id      =  "uploadForm"
+              enctype   =  "multipart/form-data"
+              action    =  "/api/photo"
+              method    =  "post">
+              <input type="file" name="userPhoto" />
+              <input type="submit" class="btn btn-default" value="Upload Image" name="submit">
+        </form>
+    </body>
+    <script>
+        /*
+        $("input").change(function(e) {
+
+            for (var i = 0; i < e.originalEvent.srcElement.files.length; i++) {
+
+                var file = e.originalEvent.srcElement.files[i];
+
+                var img = document.createElement("img");
+                var reader = new FileReader();
+                reader.onloadend = function() {
+                    img.src = reader.result;
+                }
+                reader.readAsDataURL(file);
+                $("input").after(img);
+            }
+        });*/
+    </script>
+</html>

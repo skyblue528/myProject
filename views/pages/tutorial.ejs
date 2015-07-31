@@ -2,12 +2,23 @@
     <head>
         <% include ../partials/header.ejs %>
         <style>
+            video{
+                width:750px;
+                height:600px;
+                display:block;
+                margin:0 auto 0 auto;
+
+            }
 
         </style>
     </head>
     <% include ../partials/nav.ejs %>
     <body>
-        <div>Hello World!</div>
+        <div class="container">
+            <video controls>
+                <source src="/video/wPlayer2.mp4" type="video/mp4">
+            </video>
+        </div>
     </body>
 
 </html>
