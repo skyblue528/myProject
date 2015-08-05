@@ -40,10 +40,10 @@
         <% include ../partials/nav.ejs %>
         <div class="imgContainer">
             <span><a href="/profile?name=hellokitty1.png"><img src="/images/hellokitty1.png"/></a></span>
-            <span><a href="/profile?name=hellokitty2.png"><img src="/images/hellokitty2.png"/></a></span>
-            <span><a href="/profile?name=hellokitty3.png"><img src="/images/hellokitty3.png"/></a></span>
-            <span><a href="/profile?name=minion.png"><img src="/images/minion.png"/></a></span>
-            <span><a href="/profile?name=minion2.png"><img src="/images/minion2.png"/></a></span>
+            <span><a href="/profile?name=hellokitty2.png"><img src="/images/hellokitty2.png" name="player1"/></a></span>
+            <span><a href="/profile?name=hellokitty3.png"><img src="/images/hellokitty3.png" name="player1"/></a></span>
+            <span><a href="/profile?name=minion.png"><img src="/images/minion.png" name="player1"/></a></span>
+            <span><a href="/profile?name=minion2.png"><img src="/images/minion2.png" name="player1"/></a></span>
         </div>
 
         <div class="bigContainer">
@@ -57,15 +57,15 @@
                 <input type="file" name="userPhoto" />
                 <div class="files"></div>
                 <input type="submit" class="btn btn-default" value="Upload Image" name="submit">
-                <button id='player1' type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal">Select</button>
-                <div class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
+                <button id='player1' type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal1">Select</button>
+                <div class="modal1 modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
-                                <span><a href="/profile?name=hellokitty1.png"><img src="/images/hellokitty1.png"/></a></span>
-                                <span><a href="/profile?name=hellokitty2.png"><img src="/images/hellokitty2.png"/></a></span>
-                                <span><a href="/profile?name=hellokitty3.png"><img src="/images/hellokitty3.png"/></a></span>
-                                <span><a href="/profile?name=minion.png"><img src="/images/minion.png"/></a></span>
-                                <span><a href="/profile?name=minion2.png"><img src="/images/minion2.png"/></a></span>
+                                <span><a href="/profile?name=hellokitty1.png&player=1"><img src="/images/hellokitty1.png"/></a></span>
+                                <span><a href="/profile?name=hellokitty2.png&name1=player1"><img src="/images/hellokitty2.png"/></a></span>
+                                <span><a href="/profile?name=hellokitty3.png&name1=player1"><img src="/images/hellokitty3.png"/></a></span>
+                                <span><a href="/profile?name=minion.png&name1=player1"><img src="/images/minion.png"/></a></span>
+                                <span><a href="/profile?name=minion2.png&name1=player1"><img src="/images/minion2.png"/></a></span>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                 <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
@@ -87,15 +87,15 @@
                 <input type="file" name="userPhoto" />
                 <div class="files"></div>
                 <input type="submit" class="btn btn-default" value="Upload Image" name="submit">
-                <button id='player2' type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal">Select</button>
-                <div class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
+                <button id='player2' type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal2">Select</button>
+                <div class="modal2 modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
-                            <span><a href="/profile?name=hellokitty1.png"><img src="/images/hellokitty1.png"/></a></span>
-                            <span><a href="/profile?name=hellokitty2.png"><img src="/images/hellokitty2.png"/></a></span>
-                            <span><a href="/profile?name=hellokitty3.png"><img src="/images/hellokitty3.png"/></a></span>
-                            <span><a href="/profile?name=minion.png"><img src="/images/minion.png"/></a></span>
-                            <span><a href="/profile?name=minion2.png"><img src="/images/minion2.png"/></a></span>
+                            <span><a href="/profile?name=hellokitty1.png&player=2"><img src="/images/hellokitty1.png"/></a></span>
+                            <span><a href="/profile?name=hellokitty2.png&name1=player2"><img src="/images/hellokitty2.png"/></a></span>
+                            <span><a href="/profile?name=hellokitty3.png&name1=player2"><img src="/images/hellokitty3.png"/></a></span>
+                            <span><a href="/profile?name=minion.png&name1=player2"><img src="/images/minion.png"/></a></span>
+                            <span><a href="/profile?name=minion2.png&name1=player2"><img src="/images/minion2.png"/></a></span>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                 <!-- <input type="submit" class="btn btn-default" value="Save changes" name="submit"> -->

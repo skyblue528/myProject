@@ -48,23 +48,27 @@ app.get('/learnMore', function(request, response) {
 
 app.get('/profile',function(request, response){
   //res.sendfile('pages/profile');
-  console.log('request.query.name: ' +request.query.name);
+  console.log('request.query.name: ' ,request.query.name);
   if(request.query.name) {
-    console.log('request.query.name2: ' + request.query.name);
-    console.log("filePath: " + filePath)
-    filePath = 'public/images/' + request.query.name;
-
-    if (total++ % 2 == 0) {
-
-    cp(filePath, 'public/images/m1.png', function (err) {
-      console.log("err: ", err)
-      console.log("hello world")
-      //response.sendfile('public/images/m1.png')
-    });
-  }else {
+    //console.log('request.query.name2: ' + request.query.name);
+    //console.log("filePath: " + filePath)
+    if(request.query.name1 == 'player1') {
+      filePath = 'public/images/' + request.query.name;
+      console.log('request.query.name1: ' ,request.query.name1);
+      console.log("out player1")
+      cp(filePath, 'public/images/m1.png', function (err) {
+        //console.log("err: ", err)
+        console.log("player1")
+        //response.sendfile('public/images/m1.png')
+      });
+    }else if(request.query.name1 == 'player2'){
+      filePath = 'public/images/' + request.query.name;
+      console.log('request.query.name2: ' ,request.query.name1);
+      console.log("out player2")
       cp(filePath, 'public/images/m2.png', function (err) {
-        console.log("err: ", err)
+        //console.log("err: ", err)
         console.log("hello world")
+        console.log("player2")
         //response.sendfile('public/images/m1.png')
       });
     }
