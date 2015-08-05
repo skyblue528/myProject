@@ -4,9 +4,6 @@
     <list default="true" id="b94c5520-cee7-4256-98e0-026a0bbe0bf1" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/minion4.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/minion.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/m1.png" afterPath="$PROJECT_DIR$/public/images/m1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/m2.png" afterPath="$PROJECT_DIR$/public/images/m2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/profile.ejs" afterPath="$PROJECT_DIR$/views/pages/profile.ejs" />
     </list>
     <ignored path="node-js-getting-started.iws" />
@@ -32,21 +29,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2626159" vertical-offset="34" max-vertical-offset="1830">
-              <caret line="84" column="3" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1830">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.ejs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="profile.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/pages/profile.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.083333" vertical-offset="808" max-vertical-offset="1755">
-              <caret line="70" column="108" selection-start-line="70" selection-start-column="108" selection-end-line="70" selection-end-column="108" />
+            <state vertical-scroll-proportion="0.5089757" vertical-offset="673" max-vertical-offset="1755">
+              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -138,8 +135,8 @@
         <option value="$PROJECT_DIR$/views/partials/nav.ejs" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/views/pages/name.ejs" />
-        <option value="$PROJECT_DIR$/views/pages/profile.ejs" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/views/pages/profile.ejs" />
       </list>
     </option>
   </component>
@@ -855,18 +852,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/pages/profile.ejs">
+    <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.083333" vertical-offset="808" max-vertical-offset="1755">
-          <caret line="70" column="108" selection-start-line="70" selection-start-column="108" selection-end-line="70" selection-end-column="108" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1830">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$PROJECT_DIR$/views/pages/profile.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2626159" vertical-offset="34" max-vertical-offset="1830">
-          <caret line="84" column="3" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.5089757" vertical-offset="673" max-vertical-offset="1755">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding />
         </state>
       </provider>
