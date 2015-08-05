@@ -50,26 +50,20 @@ app.get('/profile',function(request, response){
   //res.sendfile('pages/profile');
   console.log('request.query.name: ' ,request.query.name);
   if(request.query.name) {
-    //console.log('request.query.name2: ' + request.query.name);
     //console.log("filePath: " + filePath)
-    if(request.query.name1 == 'player1') {
+    if(request.query.player == '1') {
       filePath = 'public/images/' + request.query.name;
-      console.log('request.query.name1: ' ,request.query.name1);
-      console.log("out player1")
+      //console.log('request.query.name1: ' ,request.query.name1);
+      //console.log("out player1")
       cp(filePath, 'public/images/m1.png', function (err) {
-        //console.log("err: ", err)
-        console.log("player1")
         //response.sendfile('public/images/m1.png')
       });
-    }else if(request.query.name1 == 'player2'){
+    }else if(request.query.player == '2'){
       filePath = 'public/images/' + request.query.name;
       console.log('request.query.name2: ' ,request.query.name1);
       console.log("out player2")
       cp(filePath, 'public/images/m2.png', function (err) {
         //console.log("err: ", err)
-        console.log("hello world")
-        console.log("player2")
-        //response.sendfile('public/images/m1.png')
       });
     }
   }
@@ -89,9 +83,6 @@ app.post('/api/photo/player1',function(request, response){
     response.render('pages/profile')
 
   }
-    //console.log(request.body);
-    //response.end("" + request.body.name);
-    //response.end()
 
 });
 
