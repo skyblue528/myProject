@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ../partials/header.ejs %>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+    <!-- <link rel='stylesheet' href='armandoStyle.css'/> -->
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background: url("https://s3.amazonaws.com/codecademy-content/projects/armando-perez/brand.jpg") no-repeat;
+            background-size: cover;
+        }
+
+        .container{
+            max-width: 940px;
+        }
+        /* heading */
+        .heading{
+            padding: 30px 0 30px 0;
+        }
+
+        .heading a{
+            text-decoraion: none;
+            color: #f01251;
+        }
+
+        .heading h1{
+            color: #fff;
+        }
+
+        .heading .all{
+            width: 100px;
+            background-color: #f01251;
+            color: #fff;
+            text-align: center;
+            border: none;
+        }
+
+        .heading .all:hover{
+            background-color: #0393ff;
+            border: none;
+        }
+
+        /* footer*/
+
+        .footer{
+            padding:50px 0 30px 0;
+        }
+        .footer li{
+            list-style-type: none;
+            margin-right: 40px;
+            float: left;
+        }
+
+        /* slider */
+
+        .slider {
+            position: relative;
+            width: 100%;
+            height: 680px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .slide {
+            background: transparent url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/feature-gradient-transparent.png') center center no-repeat;
+            background-size: cover;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .active-slide {
+            display: block;
+        }
+
+        .slider-nav{
+            text-align: center;
+            margin: 20px 0 40px 0;
+        }
+
+        .arrow-prev{
+            margin-right: 45px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 9px;
+        }
+
+        .arrow-next{
+            margin-left: 45px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 9px;
+        }
+
+        .slider-dots{
+            list-style: none;
+            display:inline;
+            font-size: 30px;
+            margin-right: 5px;
+        }
+
+        .slider-dots li{
+            color: #bbbcbc;
+            display: inline;
+            font-size: 30px;
+            margin-right: 5px;
+            border: 1px solid black;
+            padding: 3px 5px 3px 5px;
+        }
+
+        .slider-dots li.active-dot{
+            color: #363636;
+        }
+
+    </style>
+</head>
+<body>
+<% include ../partials/nav.ejs %>
+<div class="heading">
+    <div class="container">
+        <h1>Julia's Accessories</h1>
+        <!--<div class="pull-right">
+            <ul class="nav nav-pills">
+                <li class="all">
+                    <a class="all" href="#">All</a>
+                </li>
+                <li>
+                    <a href="#">Consumer</a>
+                </li>
+                <li>
+                    <a href="#">Mobile</a>
+                </li>
+                <li>
+                    <a href="#">Commerce</a>
+                </li>
+                <li>
+                    <a href="#">Enterprise</a>
+                </li>
+            </ul>
+        </div>-->
+    </div>
+</div>
+
+<div class="slider">
+    <div class="slide active-slide">
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/crystal.png">
+                            <span><b>Sale:</b> $3.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/longNecklace.png">
+                            <span><b>Sale:</b> $8.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/hairTies.png" height="273" width="273">
+                            <span><b>Sale:</b> $6.99</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/necklace.png">
+                            <span><b>Sale:</b> $5.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/hairTies2.png" height="273" width="273">
+                            <span><b>Sale:</b> $3.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/bracelet1.png" height="273" width="273">
+                            <span><b>Sale:</b> $8.99</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/bracelet2.png" height="273" width="273">
+                            <span><b>Sale:</b> $8.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/keyChain1.png" height="273" width="273">
+                            <span><b>Sale:</b> $3.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/earing1.png" height="273" width="273">
+                            <span><b>Sale:</b> $3.99</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page 2 -->
+
+    <div class="slide">
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/bracelet3.png" height="273" width="273">
+                            <span><b>Sale:</b> $8.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/bracelet4.png" height="273" width="273">
+                            <span><b>Sale:</b> $8.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/necklace1.png" height="273" width="273">
+                            <span><b>Sale:</b> $19.99</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/dollKeyChain1.png" height="273" width="273">
+                            <span><b>Sale:</b> $19.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/dollKeyChain2.png" height="273" width="273">
+                            <span><b>Sale:</b> $19.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/keyChain2.png" height="273" width="273">
+                            <span><b>Sale:</b> $5.99</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/dollKeyChain3.png" height="273" width="273">
+                            <span><b>Sale:</b> $8.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/bracelet5.png" height="273" width="273">
+                            <span><b>Sale:</b> $5.75</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/img37.png" height="273" width="273">
+                            <span><b>Sale:</b> $7.99</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page 3 -->
+    <div class="slide">
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/img19.png" height="273" width="273">
+                            <span><b>Sale:</b> $6.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/img20.png" height="273" width="273">
+                            <span><b>Sale:</b> $3.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/img21.png" height="273" width="273">
+                            <span><b>Sale:</b> $9.99</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/img22.png" height="273" width="273">
+                            <span><b>Sale:</b> $19.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/img23.png" height="273" width="273">
+                            <span><b>Sale:</b> $4.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/img24.png" height="273" width="273">
+                            <span><b>Sale:</b> $15.99</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/img25.png" height="273" width="273">
+                            <span><b>Sale:</b> $3.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/img26.png" height="273" width="273">
+                            <span><b>Sale:</b> $4.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/img27.png" height="273" width="273">
+                            <span><b>Sale:</b> $6.99</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page 4 -->
+    <div class="slide">
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/img28.png" height="273" width="273">
+                            <span><b>Sale:</b> $15.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/img29.png" height="273" width="273">
+                            <span><b>Sale:</b> $4.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/img30.png" height="273" width="273">
+                            <span><b>Sale:</b> $6.99</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/img31.png" height="273" width="273">
+                            <span><b>Sale:</b> $3.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/img32.png" height="273" width="273">
+                            <span><b>Sale:</b> $3.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/img33.png" height="273" width="273">
+                            <span><b>Sale:</b> $3.99</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/img34.png" height="273" width="273">
+                            <span><b>Sale:</b> $7.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/img35.png" height="273" width="273">
+                            <span><b>Sale:</b> $12.99</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="thumbnail"><img src="/images/img36.png" height="273" width="273">
+                            <span><b>Sale:</b> $11.99</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="slider-nav">
+    <a href="#" class="arrow-prev"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-prev.png"></a>
+    <ul class="slider-dots">
+        <li class="dot active-dot">1</li>
+        <li class="dot">2</li>
+        <li class="dot">3</li>
+        <li class="dot">4</li>
+    </ul>
+    <a href="#" class="arrow-next"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-next.png"></a>
+</div>
+
+
+<!-- <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <ul>
+                    <li>email</li>
+                    <li>linkedin</li>
+                    <li>twitter</li>
+                    <li>blog</li>
+                </ul>
+            </div>
+            <ul class="pull-right">
+                <li>c 2014</li>
+            </ul>
+        </div>
+    </div>
+</div> -->
+</body>
+<script>
+    /**
+     * Created by jkyaw on 8/17/15.
+     */
+    var main= function(){
+        $('.dropdown-toggle').click(function(){
+            $('.dropdown-menu').toggle();
+        });
+
+        $('.arrow-next').click(function(){
+            var currentSlide = $('.active-slide');
+            var nextSlide = currentSlide.next();
+            var currentDot = $('.active-dot');
+            var nextDot = currentDot.next();
+
+            if(nextSlide.length == 0){
+                nextSlide = $('.slide').first();
+            }
+
+            if(nextDot.length == 0){
+                nextDot = $('.dot').first();
+            }
+
+            currentDot.removeClass('active-dot');
+            nextDot.addClass('active-dot');
+            currentSlide.fadeOut(600).removeClass('active-slide');
+            nextSlide.fadeIn(600).addClass('active-slide');
+        });
+
+        $('.arrow-prev').click(function(){
+            var currentSlide = $('.active-slide');
+            var prevSlide = currentSlide.prev();
+            var currentDot = $('.active-dot');
+            var prevDot = currentDot.prev();
+
+            if(prevSlide.length == 0){
+                prevSlide = $('.slide').last();
+            }
+
+            if(prevDot.length == 0 ){
+                prevDot = $('.dot').last()
+            }
+            currentDot.removeClass('active-dot');
+            prevDot.addClass('active-dot');
+            currentSlide.fadeOut(600).removeClass('active-slide');
+            prevSlide.fadeIn(600).addClass('active-slide');
+        });
+    };
+
+    $(document).ready(main);
+</script>
+</html>

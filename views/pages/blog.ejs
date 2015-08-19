@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <% include ../partials/header.ejs %>
+        <style>
+            #title{
+                width: 400px;
+                height: 30px;
+                margin: 5px 100px 5px 0;
+            }
+            #body{
+                width: 400px;
+                height: 120px;
+                margin: 5px 100px 5px 0;
+            }
+            #price{
+                display: block;
+                margin: 5px 100px 5px 0;
+            }
+
+            label{
+                width:100px;
+                margin: 5px 10px;
+                float:left;
+            }
+            .submit{
+                width:520px;
+                height:30px;
+            }
+            input[type="submit"]{
+                float: right;
+            }
+            .br{
+                width:520px;
+                border: 1px solid black;
+                margin:15px 0 15px 0;
+            }
+            .titleLabel{
+                display: inline;
+                margin: 5px 45px 5px
+            }
+            .priceLabel{
+                display: inline;
+                margin: 5px 40px 5px
+            }
+            .locationLabel{
+                display: inline;
+                margin: 5px 15px 5px;
+            }
+
+            img{
+                float: left;
+            }
+            .smallContainer{
+                width: 320px;
+                height:160px;
+                margin: 15px 0 0 200px;
+            }
+            .p{
+                margin-top: 15px;
+                width: 520px;
+                height: 100px;
+            }
+            .inputBox{
+                width: 400px;
+                height: 25px;
+                margin: 5px 100px 5px 0;
+            }
+
+
+        </style>
+    </head>
+    <body>
+    <% include ../partials/nav.ejs %>
+        <div class="container">
+            <div>
+                <label>Title</label>
+                <textarea id="title" name="title"></textarea>
+            </div>
+            <div>
+                <label>body</label>
+                <textarea id="body" name="body"></textarea>
+            </div>
+            <div>
+                <label>File</label>
+                <div class="inputBox">
+                    <input type="file" name="photo" />
+                </div>
+            </div>
+            <div>
+                <label>Price</label>
+                <div class="inputBox">
+                    <input type="text" name="price" />
+                </div>
+            </div>
+            <div>
+                <label>Location</label>
+                <div class="inputBox">
+                    <input type="text" name="location" />
+                </div>
+            </div>
+            <div class="submit"><input type="submit" name="submit"></div>
+            <div class="br"></div>
+        </div>
+
+       <!-- <div class="container">
+            <p><a href="#">Title1</a></p>
+            <p><a href="#">Title2</a></p>
+            <p><a href="#">Title3</a></p>
+            <p><a href="#">Title4</a></p>
+        </div>-->
+        <div class="container">
+            <img src="/images/hellokitty1.png">
+            <div class="smallContainer">
+                <div class="container">
+                    <div>
+                        <b>Title:</b>
+                        <div class="titleLabel">Hello kitty</div>
+                    </div>
+                    <div>
+                        <b>Price:</b>
+                        <div class="priceLabel">$20</div>
+                    </div>
+                    <div>
+                        <b>Location:</b>
+                        <div class="locationLabel">San Francisco</div>
+                    </div>
+                 </div>
+            </div>
+            <div class="p">
+                <p>You've probably heard how paramount blogging is to the success of your
+            marketing. Without it, your SEO will tank, you'll have nothing to promote in
+            social media,you'll have no clout with your leads and customers, and you'll
+            have fewer pages to put those oh-so-valuable calls-to-action that generate
+            inbound leads. Need I say more?</p>
+            </div>
+            <div class="br"></div>
+        </div>
+
+        <!--<div class="container">
+            <img src="/images/hellokitty1.png">
+            <div class="smallContainer">
+                <div class="container">
+                    <div>
+                        <b>Title:</b>
+                        <div class="titleLabel">Hello kitty</div>
+                    </div>
+                    <div>
+                        <b>Price:</b>
+                        <div class="priceLabel">$20</div>
+                    </div>
+                    <div>
+                        <b>Location:</b>
+                        <div class="locationLabel">San Francisco</div>
+                    </div>
+                </div>
+            </div>
+            <div class="br"></div>
+        </div>-->
+
+
+    </body>
+</html>

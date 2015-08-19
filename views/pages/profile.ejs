@@ -4,35 +4,40 @@
         <style>
             .bigContainer{
                 margin:0 auto 0 auto;
-                width:570px;
-                height:330px;
+                width:690px;
+                height:450px;
             }
             .p1{
-                margin: 5px 0 5px 70px;
-                width: 50px;
+                margin: 5px 0 5px 60px;
+                width: 140px;
             }
             .p1Container{
                 float:left;
-                width: 220px;
-                height:320px;
+                width: 280px;
+                height:440px;
             }
             .p2 {
-                margin: 5px 0 5px 70px;
-                width: 50px;
+                margin: 5px 0 5px 60px;
+                width: 140px;
             }
             .p2Container{
                 float: left;
                 margin-left:120px;
-                width: 220px;
-                height:320px;
+                width: 280px;
+                height:440px;
             }
             .files{
                 margin-bottom: 10px;
             }
+
             .imgContainer{
-                width:900px;
+                width:280px;
                 height: 230px;
                 margin: 0 auto 10px auto;
+            }
+
+            .image{
+                margin: 5px 0 0 35px;
             }
 
             .selected {
@@ -47,6 +52,7 @@
         </style>
     </head>
     <body>
+    <!-- 220px, 320-->
         <% include ../partials/nav.ejs %>
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -113,12 +119,19 @@
         </div> -->
 
         <div class="bigContainer">
-        <div class="p1Container"><div class="p1">Player1</div>
-            <img src="/images/m1.png"/>
+        <!-- <div class="p1Container"><div class="p1">Player1</div> -->
+            <div class="p1Container"><div class="p1"><h1><%= name %></h1></div>
+            <div class="imgContainer">
+                <img class="image" src="/images/m1.png"/>
+            </div>
             <form id      =  "uploadForm"
                   enctype   =  "multipart/form-data"
                   action    =  "/api/photo/player1"
                   method    =  "post">
+                <label for="player1">Name: </label>
+                <input name="name" type="text" id="player1"/>
+                <input type="submit" class="btn btn-default btn-primary" name="submit">
+
                 <div class="files"></div>
                 <input type="file" name="userPhoto" />
                 <div class="files"></div>
@@ -139,15 +152,19 @@
                         </div><!-- /.modal-content -->
                     </div><!-- /.modal-dialog -->
                 </div><!-- /.modal -->
-        </form>
-        </div>
+            </form>
+            </div>
 
-        <div class="p2Container"><div class="p2">Player2</div>
-            <img src="/images/m2.png"/>
+        <div class="p2Container"><div class="p2"><h1><%= name %></h1></div>
+            <div class="imgContainer"><img class="image" src="/images/m2.png"/></div>
             <form id      =  "uploadForm"
                   enctype   =  "multipart/form-data"
                   action    =  "/api/photo/player2"
                   method    =  "post">
+                <label for="player2">Name: </label>
+                <input name="name" type="text" id="player2"/>
+                <input type="submit" class="btn btn-default btn-primary" name="name">
+
                 <div class="files"></div>
                 <input type="file" name="userPhoto" />
                 <div class="files"></div>

@@ -46,9 +46,18 @@ app.get('/learnMore', function(request, response) {
   response.render('pages/tutorial');
 });
 
+app.get('/blog', function(request, response) {
+  response.render('pages/blog');
+});
+
+app.get('/jewelry', function(request, response) {
+  response.render('pages/jewelry');
+});
+
 app.get('/profile',function(request, response){
   //res.sendfile('pages/profile');
-  console.log('request.query.name: ' ,request.query.name);
+  //console.log('request.query.name: ' ,request.query.name);
+  //console.log('request: ' , request);
   if(request.query.name) {
     //console.log("filePath: " + filePath)
     if(request.query.player == '1') {
@@ -58,6 +67,10 @@ app.get('/profile',function(request, response){
       cp(filePath, 'public/images/m1.png', function (err) {
         //response.sendfile('public/images/m1.png')
       });
+      /*var name = request.query.pName;
+      response.render('pages/profile',{
+        pName: name
+      });*/
     }else if(request.query.player == '2'){
       filePath = 'public/images/' + request.query.name;
       console.log('request.query.name2: ' ,request.query.name1);
@@ -67,7 +80,13 @@ app.get('/profile',function(request, response){
       });
     }
   }
-  response.render('pages/profile');
+  response.render('pages/profile',{
+    name: 'julia'
+  });
+  /*var name = request.query.playerName;
+  response.render('pages/name',{
+    playerName: 1
+  });*/
 });
 
 
@@ -99,6 +118,8 @@ app.post('/api/photo/player2',function(request, response){
 
   }
 });
+
+
 
 app.get('/name',function(request, response){
   var name = request.query.name;
