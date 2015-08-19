@@ -2,53 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b94c5520-cee7-4256-98e0-026a0bbe0bf1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bracelet1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bracelet2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bracelet3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bracelet4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bracelet5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/crystal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/dollKeyChain1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/dollKeyChain2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/dollKeyChain3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/earing1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/hairTies.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/hairTies2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img19.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img21.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img22.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img23.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img25.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img26.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img27.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img28.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img29.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img30.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img31.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img33.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img34.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img35.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img36.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/img37.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/keyChain1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/keyChain2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/keyChain3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/longNecklace.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/necklace.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/necklace1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/pages/blog.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/jewelryStylesheet.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/m2.png" afterPath="$PROJECT_DIR$/public/images/m2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/home.ejs" afterPath="$PROJECT_DIR$/views/pages/home.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/nav.ejs" afterPath="$PROJECT_DIR$/views/partials/nav.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/node-js-getting-started.iml" afterPath="$PROJECT_DIR$/.idea/node-js-getting-started.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/profile.ejs" afterPath="$PROJECT_DIR$/views/pages/profile.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/jewelry.ejs" afterPath="$PROJECT_DIR$/views/pages/jewelry.ejs" />
     </list>
     <ignored path="node-js-getting-started.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nav.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nav.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/partials/nav.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32423207">
+            <state vertical-scroll-proportion="-11.875">
               <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding />
             </state>
@@ -113,8 +67,8 @@
       <file leaf-file-name="profile.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/pages/profile.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.375">
-              <caret line="175" column="133" selection-start-line="175" selection-start-column="133" selection-end-line="175" selection-end-column="133" />
+            <state vertical-scroll-proportion="-24.75">
+              <caret line="134" column="41" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -123,18 +77,18 @@
       <file leaf-file-name="home.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/pages/home.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.625">
+            <state vertical-scroll-proportion="-23.5">
               <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jewelry.ejs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="jewelry.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/pages/jewelry.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="68.75">
-              <caret line="203" column="52" selection-start-line="203" selection-start-column="52" selection-end-line="203" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.2662116">
+              <caret line="510" column="10" selection-start-line="510" selection-start-column="10" selection-end-line="510" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -179,9 +133,9 @@
         <option value="$PROJECT_DIR$/views/pages/home.ejs" />
         <option value="$PROJECT_DIR$/views/pages/clothes.ejs" />
         <option value="$PROJECT_DIR$/public/stylesheets/jewelry.css" />
-        <option value="$PROJECT_DIR$/views/pages/jewelry.ejs" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/views/partials/nav.ejs" />
+        <option value="$PROJECT_DIR$/views/pages/jewelry.ejs" />
       </list>
     </option>
   </component>
@@ -193,9 +147,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="255" />
-    <option name="y" value="23" />
-    <option name="width" value="1425" />
+    <option name="x" value="457" />
+    <option name="y" value="25" />
+    <option name="width" value="1132" />
     <option name="height" value="1023" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -630,15 +584,15 @@
       <option name="number" value="Default" />
       <updated>1438054437503</updated>
       <workItem from="1439939054463" duration="54000" />
-      <workItem from="1439939123757" duration="4475000" />
+      <workItem from="1439939123757" duration="9642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4529000" />
+    <option name="totallyTimeSpent" value="9696000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="255" y="23" width="1425" height="1023" extended-state="0" />
+    <frame x="457" y="25" width="1132" height="1023" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -649,7 +603,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3646813" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15907447" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.108256884" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -704,14 +658,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/pages/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1011,39 +957,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/pages/profile.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375">
-          <caret line="175" column="133" selection-start-line="175" selection-start-column="133" selection-end-line="175" selection-end-column="133" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/bracelet1.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/pages/home.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.625">
-          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/jewelryStylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/pages/jewelry.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="68.75">
-          <caret line="203" column="52" selection-start-line="203" selection-start-column="52" selection-end-line="203" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -1058,8 +980,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/nav.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32423207">
+        <state vertical-scroll-proportion="-11.875">
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/keyChain1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/pages/home.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.5">
+          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/pages/profile.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.75">
+          <caret line="134" column="41" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/pages/jewelry.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2662116">
+          <caret line="510" column="10" selection-start-line="510" selection-start-column="10" selection-end-line="510" selection-end-column="10" />
           <folding />
         </state>
       </provider>

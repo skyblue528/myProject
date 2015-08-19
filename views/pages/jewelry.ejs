@@ -25,26 +25,18 @@
 
         .heading a{
             text-decoraion: none;
-            color: #f01251;
+            border: none;
+            font-weight: 700;
+            font-size: 22px;
         }
 
         .heading h1{
             color: #fff;
         }
 
-        .heading .all{
-            width: 100px;
-            background-color: #f01251;
-            color: #fff;
-            text-align: center;
-            border: none;
+        .heading li{
+            list-style-type: none;
         }
-
-        .heading .all:hover{
-            background-color: #0393ff;
-            border: none;
-        }
-
         /* footer*/
 
         .footer{
@@ -61,7 +53,7 @@
         .slider {
             position: relative;
             width: 100%;
-            height: 680px;
+            height: 770px;
             border-bottom: 1px solid #ddd;
         }
 
@@ -119,6 +111,11 @@
             color: #363636;
         }
 
+        .slider input{
+            margin-left:3px;
+            color: #428bca;
+        }
+
     </style>
 </head>
 <body>
@@ -126,6 +123,17 @@
 <div class="heading">
     <div class="container">
         <h1>Julia's Accessories</h1>
+        <div class="pull-right">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                        My Cart
+                    </a>
+                </li>
+            </ul>
+        </div>
+
         <!--<div class="pull-right">
             <ul class="nav nav-pills">
                 <li class="all">
@@ -155,17 +163,27 @@
                 <div class="row">
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/crystal.png">
-                            <span><b>Sale:</b> $3.99</span>
+                            <span><b>Sale:</b> $3.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
+                            <!--.slider input -->
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/longNecklace.png">
-                            <span><b>Sale:</b> $8.99</span>
+                            <span><b>Sale:</b> $8.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/hairTies.png" height="273" width="273">
-                            <span><b>Sale:</b> $6.99</span>
+                            <span><b>Sale:</b> $6.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -173,17 +191,26 @@
                 <div class="row">
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/necklace.png">
-                            <span><b>Sale:</b> $5.99</span>
+                            <span><b>Sale:</b> $5.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/hairTies2.png" height="273" width="273">
-                            <span><b>Sale:</b> $3.99</span>
+                            <span><b>Sale:</b> $3.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/bracelet1.png" height="273" width="273">
-                            <span><b>Sale:</b> $8.99</span>
+                            <span><b>Sale:</b> $8.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -191,17 +218,26 @@
                 <div class="row">
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/bracelet2.png" height="273" width="273">
-                            <span><b>Sale:</b> $8.99</span>
+                            <span><b>Sale:</b> $8.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/keyChain1.png" height="273" width="273">
-                            <span><b>Sale:</b> $3.99</span>
+                            <span><b>Sale:</b> $3.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/earing1.png" height="273" width="273">
-                            <span><b>Sale:</b> $3.99</span>
+                            <span><b>Sale:</b> $3.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -217,17 +253,26 @@
                 <div class="row">
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/bracelet3.png" height="273" width="273">
-                            <span><b>Sale:</b> $8.99</span>
+                            <span><b>Sale:</b> $8.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/bracelet4.png" height="273" width="273">
-                            <span><b>Sale:</b> $8.99</span>
+                            <span><b>Sale:</b> $8.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/necklace1.png" height="273" width="273">
-                            <span><b>Sale:</b> $19.99</span>
+                            <span><b>Sale:</b> $19.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -235,17 +280,26 @@
                 <div class="row">
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/dollKeyChain1.png" height="273" width="273">
-                            <span><b>Sale:</b> $19.99</span>
+                            <span><b>Sale:</b> $19.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/dollKeyChain2.png" height="273" width="273">
-                            <span><b>Sale:</b> $19.99</span>
+                            <span><b>Sale:</b> $19.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/keyChain2.png" height="273" width="273">
-                            <span><b>Sale:</b> $5.99</span>
+                            <span><b>Sale:</b> $5.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -253,17 +307,26 @@
                 <div class="row">
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/dollKeyChain3.png" height="273" width="273">
-                            <span><b>Sale:</b> $8.99</span>
+                            <span><b>Sale:</b> $8.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/bracelet5.png" height="273" width="273">
-                            <span><b>Sale:</b> $5.75</span>
+                            <span><b>Sale:</b> $5.75
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/img37.png" height="273" width="273">
-                            <span><b>Sale:</b> $7.99</span>
+                            <span><b>Sale:</b> $7.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -278,17 +341,26 @@
                 <div class="row">
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/img19.png" height="273" width="273">
-                            <span><b>Sale:</b> $6.99</span>
+                            <span><b>Sale:</b> $6.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/img20.png" height="273" width="273">
-                            <span><b>Sale:</b> $3.99</span>
+                            <span><b>Sale:</b> $3.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/img21.png" height="273" width="273">
-                            <span><b>Sale:</b> $9.99</span>
+                            <span><b>Sale:</b> $9.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -296,17 +368,26 @@
                 <div class="row">
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/img22.png" height="273" width="273">
-                            <span><b>Sale:</b> $19.99</span>
+                            <span><b>Sale:</b> $19.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/img23.png" height="273" width="273">
-                            <span><b>Sale:</b> $4.99</span>
+                            <span><b>Sale:</b> $4.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/img24.png" height="273" width="273">
-                            <span><b>Sale:</b> $15.99</span>
+                            <span><b>Sale:</b> $15.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -314,17 +395,26 @@
                 <div class="row">
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/img25.png" height="273" width="273">
-                            <span><b>Sale:</b> $3.99</span>
+                            <span><b>Sale:</b> $3.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/img26.png" height="273" width="273">
-                            <span><b>Sale:</b> $4.99</span>
+                            <span><b>Sale:</b> $4.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/img27.png" height="273" width="273">
-                            <span><b>Sale:</b> $6.99</span>
+                            <span><b>Sale:</b> $6.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -339,17 +429,26 @@
                 <div class="row">
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/img28.png" height="273" width="273">
-                            <span><b>Sale:</b> $15.99</span>
+                            <span><b>Sale:</b> $15.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/img29.png" height="273" width="273">
-                            <span><b>Sale:</b> $4.99</span>
+                            <span><b>Sale:</b> $4.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/img30.png" height="273" width="273">
-                            <span><b>Sale:</b> $6.99</span>
+                            <span><b>Sale:</b> $6.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -357,17 +456,26 @@
                 <div class="row">
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/img31.png" height="273" width="273">
-                            <span><b>Sale:</b> $3.99</span>
+                            <span><b>Sale:</b> $3.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/img32.png" height="273" width="273">
-                            <span><b>Sale:</b> $3.99</span>
+                            <span><b>Sale:</b> $3.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/img33.png" height="273" width="273">
-                            <span><b>Sale:</b> $3.99</span>
+                            <span><b>Sale:</b> $3.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -375,17 +483,26 @@
                 <div class="row">
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/img34.png" height="273" width="273">
-                            <span><b>Sale:</b> $7.99</span>
+                            <span><b>Sale:</b> $7.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/img35.png" height="273" width="273">
-                            <span><b>Sale:</b> $12.99</span>
+                            <span><b>Sale:</b> $12.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="#" class="thumbnail"><img src="/images/img36.png" height="273" width="273">
-                            <span><b>Sale:</b> $11.99</span>
+                            <span><b>Sale:</b> $11.99
+                                <input type="submit" class="btn btn-default" value="Add To Cart" name="submit">
+                                <input type="submit" class="btn btn-default" value="Remove" name="submit">
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -426,9 +543,6 @@
 </div> -->
 </body>
 <script>
-    /**
-     * Created by jkyaw on 8/17/15.
-     */
     var main= function(){
         $('.dropdown-toggle').click(function(){
             $('.dropdown-menu').toggle();
