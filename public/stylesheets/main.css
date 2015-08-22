@@ -1,8 +1,3 @@
-.jumbotron .btn-primary {
-    background: #845ac7;
-    border-color: #845ac7;
-}
-
 .jumbotron p {
     color: #d9ccee;
     max-width: 75%;
@@ -17,3 +12,25 @@
     max-width: 100%;
 }
 
+.sContainer{
+    width: 800px;
+    height: 150px;
+    background: rgb(238, 238, 238) url(/images/logo.png) top left no-repeat;
+}
+
+.jumbotron h1{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:0 0 100px 100px;
+}
+
+.jumbotron p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+    color:#00008b;
+}
+
+p {
+    margin: 0px 0px 10px;
+}

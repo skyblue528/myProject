@@ -1,0 +1,53 @@
+h1{
+    text-transform: uppercase;
+    text-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;;
+    padding-left:100px;
+}
+.text{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background:#778899 url(/images/logo.png) top left no-repeat;
+}
+.bigBoard{
+    width: 810px;
+    height:700px;
+    padding-left:180px;
+}
+.board{
+    width: 200px;
+    height: 220px;
+    border: 1px solid black;
+    float:left;
+}
+
+.board.player1{
+    background: #ffffff url(/images/minion.png) center center no-repeat;
+}
+
+.board.player2{
+    background: #ffffff url(/images/minion2.png) center center no-repeat;
+}
+
+.piece{
+    width: 63px;
+    height: 63px;
+    margin-bottom: 2px;
+    border: 1px solid black;
+    float:left;
+}
+
+.disabled{
+    opacity: 0.5;
+}
+
+.piece.player1 {
+    background-color: #ff0000;
+    opacity:0.5;
+}
+
+.piece.player2 {
+    background-color:#0000ff;
+    opacity: 0.5;
+}
