@@ -5,7 +5,7 @@ var cp =require('cp');
 var app = express();  // assign the return variable into variable call app
 var done = false;
 var filePath;
-var total=0;
+
 app.use(multer({ dest: './uploads/',
   rename: function (fieldname, filename) {
     return filename+Date.now();
@@ -21,8 +21,6 @@ app.use(multer({ dest: './uploads/',
 }));
 
 app.set('port', (process.env.PORT || 5000));
-//console.log("process.env.PORT: " , process.env.PORT);
-
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/uploads'));
 
@@ -54,23 +52,13 @@ app.get('/jewelry', function(request, response) {
   response.render('pages/jewelry');
 });
 
-app.get('/profile',function(request, response){
-  //res.sendfile('pages/profile');
-  //console.log('request.query.name: ' ,request.query.name);
-  //console.log('request: ' , request);
+app.get('/profile',function(request, response){console.log('request: ' , request);
   if(request.query.name) {
-    //console.log("filePath: " + filePath)
     if(request.query.player == '1') {
       filePath = 'public/images/' + request.query.name;
-      //console.log('request.query.name1: ' ,request.query.name1);
-      //console.log("out player1")
       cp(filePath, 'public/images/m1.png', function (err) {
         //response.sendfile('public/images/m1.png')
       });
-      /*var name = request.query.pName;
-      response.render('pages/profile',{
-        pName: name
-      });*/
     }else if(request.query.player == '2'){
       filePath = 'public/images/' + request.query.name;
       console.log('request.query.name2: ' ,request.query.name1);
@@ -83,10 +71,6 @@ app.get('/profile',function(request, response){
   response.render('pages/profile',{
     name: 'julia'
   });
-  /*var name = request.query.playerName;
-  response.render('pages/name',{
-    playerName: 1
-  });*/
 });
 
 
@@ -102,7 +86,6 @@ app.post('/api/photo/player1',function(request, response){
     response.render('pages/profile')
 
   }
-
 });
 
 app.post('/api/photo/player2',function(request, response){
@@ -118,8 +101,6 @@ app.post('/api/photo/player2',function(request, response){
 
   }
 });
-
-
 
 app.get('/name',function(request, response){
   var name = request.query.name;

@@ -1,15 +1,7 @@
 <html>
 <head>
     <% include ../partials/header.ejs %>
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
     <style>
-        .bigContainer{
-            height:150px;
-            width:800px;
-            padding:0 0 100px 100px;
-
-        }
-
         .sContainer{
             width: 800px;
             height: 150px;
@@ -29,26 +21,18 @@
             color:#00008b;
         }
 
-        .jumbotron {
-            padding-right: 15px;
-            padding-left: 15px;
-            margin-right: auto;
-            margin-left: auto;
-            color: inherit;
-            background-color: rgb(238, 238, 238);
-        }
         p {
             margin: 0px 0px 10px;
         }
+
     </style>
 </head>
 <body>
     <% include ../partials/nav.ejs %>
-    <div class="bigContainer"></div>
-    <div class="jumbotron">
-        <div class="container">
+    <div class="container">
+        <div class="jumbotron">
             <div class="sContainer">
-                <h1>Welcome to Tic Tac Toe World!</h1>
+                <h1>Welcome to Tic Tac Toe!</h1>
             </div>
             <p>Let start tutorial for the 9*9 tic tac toe game!</p>
             <p><a class="btn btn-primary btn-lg" href="/learnMore" role="button">
@@ -59,7 +43,4 @@
         </div>
     </div>
 </body>
-<script>
-
-</script>
 </html>
