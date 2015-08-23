@@ -1,29 +1,36 @@
-# node-js-getting-started
+# Julia's Project
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+An open source web page application that I am developing for fun. Hopefully others can
+find something interesting here.
 
-This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
 
 ## Running Locally
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+Make sure you have [Node.js](http://nodejs.org/) installed.
 
 ```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
 $ npm install
 $ npm start
 ```
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+The app should now be running on [localhost:5000](http://localhost:5000/).
 
-## Deploying to Heroku
+## Running tests
 
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
+This project contains unit tests and end to end tests using selenium web server.
+
+``
+$ npm install selenium-standalone@latest -g
+$ selenium-standalone install
+$ selenium-standalone start &
+$ node tests/selenium/run.js
+````
+
+You can convert the html tests created in selenium IDE to javascript tests case using:
+
+``
+$ node tests/selenium/convert.js
+````
 
 ## Documentation
 

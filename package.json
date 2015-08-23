@@ -11,7 +11,10 @@
     "express": "~4.9.x",
     "multer": "~0.1.6",
     "mv":"*",
-    "cp":"*"
+    "cp":"*",
+    "selenium-html-js-converter": "*",
+    "wd-sync": "*",
+    "selenium-webdriver": "*"
   },
   "engines": {
     "node": "0.12.2"
