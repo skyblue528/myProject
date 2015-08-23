@@ -34,6 +34,13 @@ $(document).ready(function () {
         // Step #4 - Disable all boards
         toggleBoards($piece.index());
     });
+
+    if ($("#game-result-template").length > 0) {
+        var source = $("#game-result-template").html();
+        var template = Handlebars.compile(source);
+        var html = template({});
+        $('body').append(html);
+    }
 });
 
 // return 0 if no winner, -1 if player 1, 1 if player 2
@@ -148,10 +155,13 @@ function findWinnerOfBigBoard() {
     if (winner == 1) {
         $('.message').text("player2 win");
         $('.bigBoard').addClass("foundWinner");
+
+        $('#game-result-modal').modal('show');
     }
     else if (winner == -1) {
         $('.message').text("player1 win");
         $('.bigBoard').addClass("foundWinner");
+        $('#game-result-modal').modal('show');
     }
 }
 
