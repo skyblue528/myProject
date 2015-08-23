@@ -48,8 +48,8 @@ app.get('/blog', function(request, response) {
   response.render('pages/blog');
 });
 
-app.get('/jewelry', function(request, response) {
-  response.render('pages/jewelry');
+app.get('/shopping', function(request, response) {
+  response.render('pages/shopping');
 });
 
 app.get('/profile',function(request, response){console.log('request: ' , request);
@@ -115,4 +115,7 @@ app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
 
+app.get('/backbone', function(request, response) {
+  response.render('pages/backbone');
+});
 

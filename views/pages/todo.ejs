@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <% include ../partials/header.ejs %>
+</head>
+<body>
+<% include ../partials/nav.ejs %>
+
+<div id="app"></div>
+<div id="todo-view"></div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js" type="text/javascript"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js" type="text/javascript"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js" type="text/javascript"></script>
+<script>
+    /*var Meal = Backbone.Model.extend({
+     defaults:{
+     "appetizer": "caesar salad",
+     "entree": "hamburger",
+     "dessert":"cheesecake"
+     }
+     });
+
+     var lunch = new Meal({ appetizer: "soup", entree: "pizza"});
+
+
+     var TodoItem = Backbone.Model.extend({});
+     var todoItem = new TodoItem({
+     description: 'Pick up milk',
+     status: 'incomplete',
+     id: 1
+     }
+     );
+
+     //console.log(todoItem.get('description'));
+     todoItem.set({status: 'complete'});
+     console.log(todoItem.toJSON());
+     var TodoView = Backbone.View.extend({
+     render: function() {
+     var html = '<h3>' + this.model.get('description') + '</h3>';
+     $(this.el).html(html);
+     }
+     });
+
+     var todoView = new TodoView({ model: todoItem });
+     todoView.render();
+     console.log(todoView.el);
+
+     var TodoItem = Backbone.Model.extend({urlRoot: '/todos'});
+     var todoItem = new TodoItem({id: 1})
+     var todoItem = new TodoItem();
+     todoItem.set({description: 'Fill prescription.'});
+     console.log(todoItem.get('id'));
+     console.log(todoItem.toJSON());
+     //todoItem.fetch();
+     */
+    /* Creating appointment model*/
+    var Appointment = Backbone.Model.extend({});
+    var appointment = new Appointment({
+        //title:'appointment'
+    });
+    appointment.set({title : 'My Backbone Hurts',description : 'Pick up milk'});
+    //appointment.set({description : 'Pick up milk'});
+    console.log(appointment.toJSON());
+
+    /* Creating appointment view*/
+    var AppointmentView = Backbone.View.extend({
+        render:function(){
+            var html = '<li>' + this.model.get('description') + '</li>';
+            var html = '<li>' + this.model.get('title') + '</li>';
+            $(this.el).html(html);
+
+        }
+    });
+    var appointmentView = new AppointmentView({model: appointment});
+
+    appointmentView.render();
+    // you odnt have #app, it's jquery select on object with app as id
+    // this line:
+    // find element with id "app" and change the html to content of
+    //  appointmentView.el
+    $('#app').html(appointmentView.el);
+
+
+    /* level 2*/
+    /* var Appointment = Backbone.Model.extend({
+     defaults:function(){
+     return{
+     title: "Checkup",
+     date: new Date()
+     }
+
+     }
+     });
+     var appointment = new Appointment({
+
+     });
+     console.log(appointment.toJSON());
+
+     var Appointment = Backbone.Model.extend({urlRoot:'/'});
+     var apt = new Appointment({id:1});
+     apt.fetch();*/
+
+    var TodoItem = Backbone.Model.extend({
+        defaults:{
+            description: 'Pick up Milk',
+            status: 'incomplete'
+        }
+    });
+    var todoItem = new TodoItem();
+    console.log(todoItem.get('description'));
+    console.log(todoItem.get('status'));
+
+    todoItem.on('event-name', function(){
+        alert('event-name happened!');
+    });
+
+    var SimpleView = Backbone.View.extend({
+    });
+    var simpleView = new SimpleView();
+
+    console.log(simpleView.el);
+
+    /********************************/
+
+    var TodoView = Backbone.View.extend({
+        tagName:'article',
+        id: 'todo-view',
+        className: 'todo',
+        render: function(){
+            var html = '<h3>'+ this.model.get('description') + '</h3>'
+            this.$el.html(html);
+        }
+    });
+
+    var todoView = new TodoView({model:todoItem});
+    todoView.render();
+    $('#todo-view').html(todoView.el);
+    console.log(todoView.el);
+    //todoView.$el.html();
+
+
+</script>
+<!--<h3 class='incomplete'>
+    <input type='checkbox' data-id='1' />
+    Pick up milk
+</h3>-->
+</body>
+</html>

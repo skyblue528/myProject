@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <% include ../partials/header.ejs %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/shopping.css" />
+    <script type="text/javascript" src="/scripts/shopping.js"></script>
+</head>
+<body>
+<% include ../partials/nav.ejs %>
+<div class="heading">
+    <div class="container">
+        <h1 class="pull-left">Accessories</h1>
+        <h1 class="pull-right">
+            <a href="#">
+                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                My Cart
+            </a>
+        </h1>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+    </div>
+</div>
+<div class="slider-nav">
+    <a href="#" class="arrow-prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+
+    <ul class="slider-dots">
+        <li class="dot active-dot">1</li>
+        <li class="dot">2</li>
+        <li class="dot">3</li>
+        <li class="dot">4</li>
+    </ul>
+
+    <a href="#" class="arrow-next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+
+<script id="item-template" type="text/x-handlebars-template">
+    <div class="box">
+        <h2>{{title}}</h2>
+        <a href="#" class="thumbnail clearfix product-image">
+            <img src="{{image_url}}" />
+        </a>
+        <div class="clearfix">
+            <b>Sale: ${{price}}</b>
+            <input type="submit" class="btn btn-default" value="Add To Cart" name="submit" />
+            <input type="submit" class="btn btn-default" value="Remove" name="submit" />
+        </div>
+    </div>
+</script>
+</body>
+</html>
