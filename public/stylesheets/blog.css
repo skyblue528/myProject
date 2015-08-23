@@ -1,0 +1,65 @@
+
+#title{
+    width: 400px;
+    height: 30px;
+    margin: 5px 100px 5px 0;
+}
+#body{
+    width: 400px;
+    height: 120px;
+    margin: 5px 100px 5px 0;
+}
+#price{
+    display: block;
+    margin: 5px 100px 5px 0;
+}
+
+label{
+    width:100px;
+    margin: 5px 10px;
+    float:left;
+}
+.submit{
+    width:520px;
+    height:30px;
+}
+input[type="submit"]{
+    float: right;
+}
+.br{
+    width:520px;
+    border: 1px solid black;
+    margin:15px 0 15px 0;
+}
+.titleLabel{
+    display: inline;
+    margin: 5px 45px 5px
+}
+.priceLabel{
+    display: inline;
+    margin: 5px 40px 5px
+}
+.locationLabel{
+    display: inline;
+    margin: 5px 15px 5px;
+}
+
+img{
+    float: left;
+}
+.smallContainer{
+    width: 320px;
+    height:160px;
+    margin: 15px 0 0 200px;
+}
+.p{
+    margin-top: 15px;
+    width: 520px;
+    height: 100px;
+}
+.inputBox{
+    width: 400px;
+    height: 25px;
+    margin: 5px 100px 5px 0;
+}
+

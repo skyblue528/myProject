@@ -1,8 +1,9 @@
-h1{
+.ttc-header {
     text-transform: uppercase;
     text-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;;
     padding-left:100px;
 }
+
 .text{
     padding-right: 15px;
     padding-left: 15px;
@@ -10,11 +11,13 @@ h1{
     margin-left: auto;
     background:#778899 url(/images/logo.png) top left no-repeat;
 }
+
 .bigBoard{
     width: 810px;
     height:700px;
     padding-left:180px;
 }
+
 .board{
     width: 200px;
     height: 220px;

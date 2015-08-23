@@ -1,32 +1,102 @@
 <html>
 <head>
-    <% include ../partials/header.ejs %>
-    <style>
-        .bigContainer{
-            height:700px;
-            width:800px;
-            padding:0 0 100px 100px;
-
-        }
-        h1{
-            text-transform: uppercase;
-            text-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;;
-            padding:0 0 100px 100px;
-        }
-
-        .home{
-            width: 1000px;
-            height: 1000px;
-            background: #ffffff url(/images/logo.png) top left no-repeat;
-        }
-    </style>
+  <% include ../partials/header.ejs %>
+  <style>
+  </style>
 </head>
 <body>
-    <% include ../partials/nav.ejs %>
-    <div class="bigContainer">
-        <div class="home">
-            <h1>Welcome to Tic Tac Toe World</h1>
-        </div>
+<% include ../partials/nav.ejs %>
+<div class="container">
+  <section class="row info">
+    <div class="col-md-2">
+
     </div>
+    <div class="col-md-6">
+      <h1>Julia Kyaw</h1>
+      <h2>Frontend Web Developer</h2>
+    </div>
+    <div class="col-md-4">
+      <p>email: juliabinary@gmail.com </p>
+      <p>web: http://www.juliabinary.com</p>
+    </div>
+  </section>
+
+  <hr/>
+
+  <section class="row about">
+    <div class="col-md-3">
+      Objective
+    </div>
+    <div class="col-md-9">
+      <p>
+        I just graduated from UC Davis with B.S. in computer science. I love developing web sites using
+        html/css/javascript - and I would love for an opportunity to join a team that's working on a web
+        application as a developer or a QA engineer!
+      </p>
+      <p>
+        I have a working knowledge of Selenium automation and currently trying to self-teach
+        Bootstrap/Backbone/node.js.
+      </p>
+      <p>
+        You can check out my projects at http://www.juliabinary.com/ or at my github!
+      </p>
+    </div>
+  </section>
+
+  <hr/>
+
+  <section class="row work-exp">
+    <div class="col-md-3">
+      Work Experience
+    </div>
+    <div class="col-md-9">
+      <div class="work-exp">
+        <div class="row">
+          <div>QA Software Engineer at IBM</div>
+          <div class="pull-right">07 / 2014 - 03 / 2015</div>
+        </div>
+        <div class="job-summary"><ul>
+            <li>A team member assign to test the OTS product (Database monitoring web application)</li>
+            <li>Learn Agile process, attend daily scrum and gives updates</li>
+            <li>Install IBM DB2 database, configure and install latest version of OTS on Windows and Linux</li>
+            <li>Write relevant test cases in RQM (IBM's test case management system)</li>
+            <li>Install and use Selenium IDE for automation</li>
+            <li>Use firefox and chrome web inspector to help find xpath/css selector for Selenium automation </li>
+            <li>Pay attention to details, find defects, interact with product manager and engineers</li>
+            <li>Add new selenium test cases in Java</li>
+          </ul>
+
+          <p>Tools: Eclipse with IBM - Rational Team Concert, Lotus Note, cygwin, ssh, scp, tar, gunzip, vi, chrome, firefox, selenium IDE, VMWare</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr/>
+
+  <section class="row education">
+    <div class="col-md-3">
+      Education
+    </div>
+    <div class="col-md-9">
+      <div class="education first">
+        <div class="school-name">University of California, Davis</div>
+
+        <div class="dates pull-right">
+          <span class="start-year">2012</span>
+          <span class="date-separator">-</span>
+          <span class="end-year">2015</span>
+        </div>
+
+        <div class="program">
+          <span class="degree">Bachelor's Degree</span>
+
+          <span class="program-separator">,</span>
+          <span class="field-of-study">Computer Science</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 </body>
 </html>
