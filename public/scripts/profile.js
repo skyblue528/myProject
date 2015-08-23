@@ -29,6 +29,21 @@ $(document).ready(function() {
         $('body').append(html);
     }
 
+    function updateBackgroundImage(playerNumber, imageUrl) {
+        var html = '';
+        if ($('#player-bg-template').length > 0) {
+            var source = $("#player-bg-template").html();
+            var template = Handlebars.compile(source);
+
+            html = template({
+                player_number: playerNumber,
+                image_url: imageUrl
+            });
+        }
+
+        $('#player' + playerNumber +'-style').html(html);
+    }
+
     // Clicking on select avatar should set the player number and show modal
     var selectedPlayer = 1;
     $('.select-avatar-btn').on('click', function() {
@@ -41,5 +56,7 @@ $(document).ready(function() {
         var imageUrl = $(this).data('img');
         $('#player' + selectedPlayer + ' img').attr('src', '/images/' + imageUrl);
         $('#avatar-select-modal').modal('hide');
+
+        updateBackgroundImage(selectedPlayer, imageUrl);
     })
 });

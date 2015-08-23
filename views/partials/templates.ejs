@@ -10,11 +10,17 @@
     Select Avatar
   </button>
 
-  <style>
+  <style id="player{{ player_number }}-style" type="text/css">
     .board.player{{ player_number }} {
       background: transparent url("/images/{{ image_url }}") no-repeat center center;
     }
   </style>
+</script>
+
+<script id="player-bg-template" type="text/x-handlebars-template">
+  .board.player{{ player_number }} {
+    background: transparent url("/images/{{ image_url }}") no-repeat center center;
+  }
 </script>
 
 <script id="game-result-template" type="text/x-handlebars-template">
