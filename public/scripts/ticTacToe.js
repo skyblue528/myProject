@@ -136,32 +136,48 @@ function findWinnerOfCurrentBoard($board) {
     else if (winner == -1) {
         $board.addClass('player1')
     }
+    else {
+        // No one wins if the board is full
+        if (isFull(board)) {
+            $board.addClass('draw');
+        }
+    }
 }
 
 function findWinnerOfBigBoard() {
     var board = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
+    var totalCompleted = 0;
     $('.board').each(function (index) {
         var i = index % 3;
         var j = Math.floor(index / 3);
 
         if ($(this).hasClass('player1')) {
             board[i][j] = -1;
+            totalCompleted++;
         }
-        if ($(this).hasClass('player2')) {
+        else if ($(this).hasClass('player2')) {
             board[i][j] = 1;
+            totalCompleted++;
+        }
+        else if ($(this).hasClass('draw')) {
+            totalCompleted++;
         }
     });
 
     var winner = findWinnerOfBoard(board);
     if (winner == 1) {
-        $('.message').text("player2 win");
-        $('.bigBoard').addClass("foundWinner");
-
+        $('#game-result-modal')
+            .find('.modal-body').html('Player 2 Win');
         $('#game-result-modal').modal('show');
     }
     else if (winner == -1) {
-        $('.message').text("player1 win");
-        $('.bigBoard').addClass("foundWinner");
+        $('#game-result-modal')
+            .find('.modal-body').html('Player 1 Win');
+        $('#game-result-modal').modal('show');
+    }
+    else if (totalCompleted == 9) {
+        $('#game-result-modal')
+            .find('.modal-body').html('Draw');
         $('#game-result-modal').modal('show');
     }
 }
