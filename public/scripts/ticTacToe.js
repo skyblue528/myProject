@@ -143,6 +143,7 @@ function findWinnerOfBigBoard() {
     $('.board').each(function (index) {
         var i = index % 3;
         var j = Math.floor(index / 3);
+
         if ($(this).hasClass('player1')) {
             board[i][j] = -1;
         }

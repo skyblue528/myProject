@@ -1,4 +1,4 @@
-module.exports = function testBlueWinsLeft (browser, options)  {
+module.exports = function testBlueVertialLeftWin (browser, options)  {
 
     if (!options) options = {};
     if (!options.lbParam) options.lbParam = {vuSn: 1};
