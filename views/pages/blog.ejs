@@ -7,66 +7,64 @@
 <body>
 <% include ../partials/nav.ejs %>
 
-<div class="main">
-  <div class="container">
-    <form>
-      <div class="form-group">
-        <label for="title">Title</label>
-        <input type="name" class="form-control" id="title" />
+<div class="container">
+  <h1>Welcome to Blog App</h1>
+  <form>
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="name" class="form-control" id="title" />
 
-        <label for="body">Body</label>
-        <textarea class="form-control" id="body"></textarea>
+      <label for="body">Body</label>
+      <textarea class="form-control" id="body"></textarea>
 
-        <label for="file">File</label>
-        <input type="file" class="form-control" name="photo" id="file" />
+      <label for="file">File</label>
+      <input type="file" class="form-control" name="photo" id="file" />
 
-        <label for="price">Price</label>
-        <input type="text" class="form-control" id="price" />
+      <label for="price">Price</label>
+      <input type="text" class="form-control" id="price" />
 
-        <label for="location">Location</label>
-        <input type="text" class="form-control" id="location" />
-      </div>
-    </form>
-    <div class="submit">
-      <input class="btn btn-primary" type="submit" name="submit" />
+      <label for="location">Location</label>
+      <input type="text" class="form-control" id="location" />
     </div>
-    <div class="br"></div>
+  </form>
+  <div class="submit">
+    <input class="btn btn-primary" type="submit" name="submit" />
+  </div>
+  <div class="br"></div>
+
+  <div class="sections">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <img src="/images/hellokitty1.png">
+        </div>
+        <div class="col-md-3">
+          <span>
+            <b>Title:</b>
+            Hello kitty
+          </span>
+          <span class="pricelabel">
+            <b>Price:</b>
+            $20
+          </span>
+          <span class="pricelabel">
+            <b>Location:</b>
+            San Francisco
+          </span>
+        </div>
+      </div>
+
+      <div class="p">
+        <p>You've probably heard how paramount blogging is to the success of your
+          marketing. Without it, your SEO will tank, you'll have nothing to promote in
+          social media,you'll have no clout with your leads and customers, and you'll
+          have fewer pages to put those oh-so-valuable calls-to-action that generate
+          inbound leads. Need I say more?</p>
+      </div>
+      <div class="br"></div>
+    </div>
   </div>
 </div>
-
-<div class="sections">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2">
-        <img src="/images/hellokitty1.png">
-      </div>
-      <div class="col-md-3">
-        <span>
-          <b>Title:</b>
-          Hello kitty
-        </span>
-        <span class="pricelabel">
-          <b>Price:</b>
-          $20
-        </span>
-        <span class="pricelabel">
-          <b>Location:</b>
-          San Francisco
-        </span>
-      </div>
-    </div>
-
-    <div class="p">
-      <p>You've probably heard how paramount blogging is to the success of your
-        marketing. Without it, your SEO will tank, you'll have nothing to promote in
-        social media,you'll have no clout with your leads and customers, and you'll
-        have fewer pages to put those oh-so-valuable calls-to-action that generate
-        inbound leads. Need I say more?</p>
-    </div>
-    <div class="br"></div>
-  </div>
-</div>
-
 
 </body>
 </html>

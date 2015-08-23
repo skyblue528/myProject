@@ -2,14 +2,11 @@ var total = 0;
 
 $(document).ready(function () {
     for (var index = 0; index < 9; index++) {
-        $('.bigBoard').append('<div class="board"></div>')
+        $('.bigBoard').append('<div class="col-xs-4"><div class="row board"></div></div>')
     }
 
     for (var i = 0; i < 9; i++) {
-        if (i == 0) {
-            $('.board').append('<div class="message">Tic Tac Toe</div>');
-        }
-        $('.board').append('<div class="piece"></div>');
+        $('.board').append('<div class="piece col-xs-4"></div>');
     }
 
     $('.piece').on('click', function () {
@@ -167,7 +164,7 @@ function toggleBoards(pieceIndex) {
 
         if ($('.bigBoard').hasClass('foundWinner')) {
             $board.addClass('disabled');
-        } else if ((pieceIndex - 1) == index) {
+        } else if ((pieceIndex) == index) {
             // if this board is full - then enable the rest..
             var board = convertToArray($board);
             if (isFull(board)) {

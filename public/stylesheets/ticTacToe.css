@@ -13,16 +13,10 @@
 }
 
 .bigBoard{
-    width: 810px;
-    height:700px;
-    padding-left:180px;
 }
 
-.board{
-    width: 200px;
-    height: 220px;
+.board {
     border: 1px solid black;
-    float:left;
 }
 
 .board.player1{
@@ -33,12 +27,22 @@
     background: #ffffff url(/images/minion2.png) center center no-repeat;
 }
 
-.piece{
-    width: 63px;
-    height: 63px;
-    margin-bottom: 2px;
+.piece {
+    height: 50px;
     border: 1px solid black;
-    float:left;
+    padding: 0px;
+}
+
+@media (max-width: 600px) {
+    .piece {
+        height: 40px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .piece {
+        height: 70px;
+    }
 }
 
 .disabled{
