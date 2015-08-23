@@ -17,11 +17,11 @@ $ npm start
 
 If you plan to do some development project and run tests, you need to install devDependencies:
 
-``
+```sh
 $ npm install --dev
 $ npm install selenium-standalone@latest -g
 $ selenium-standalone install
-````
+```
 
 The app should now be running on [localhost:5000](http://localhost:5000/).
 
