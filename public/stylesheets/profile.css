@@ -1,35 +1,3 @@
-.p1{
-    margin: 5px 0 5px 60px;
-    width: 140px;
-}
-
-.p1Container{
-    float:left;
-    width: 280px;
-    height:440px;
-}
-
-.p2 {
-    margin: 5px 0 5px 60px;
-    width: 140px;
-}
-.p2Container{
-    float: left;
-    margin-left:120px;
-    width: 280px;
-    height:440px;
-}
-
-.files{
-    margin-bottom: 10px;
-}
-
-.imgContainer{
-    width:280px;
-    height: 230px;
-    margin: 0 auto 10px auto;
-}
-
 .image{
     margin: 5px 0 0 35px;
 }
@@ -38,7 +6,15 @@
     display: inline-block;
     border: 3px solid blue;
 }
-.boxes{
+
+.boxes {
     width: 200px;
-    height:350px;
+    height: 350px;
+}
+
+.player-image,
+.player-name {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
 }

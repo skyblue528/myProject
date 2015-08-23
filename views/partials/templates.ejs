@@ -1,45 +1,21 @@
 <script id="player-template" type="text/x-handlebars-template">
-  <div class="col-sm-6">
-    <div class="row">
-      <div class="player">
-        <h1>Player {{player_number}}: {{ name }}</h1>
-      </div>
-    </div>
+  <h2>Player {{player_number}}</h2>
+  <input class="player-name" name="name" type="text" value="{{ name }}"/>
 
-    <div class="row">
-      <div class="col-sm-4">
-        <img class="image" src="/images/{{ image_url }}"/>
-      </div>
-
-      <div class="col-sm-8">
-        <div class="row">
-          <div class="col-sm-3">
-            <label for="player1">Name: </label>
-          </div>
-          <div class="col-sm-9">
-            <input name="name" type="text" id="player1" value="{{ name }}"/>
-          </div>
-        </div>
-
-        <br />
-
-        <div class="row">
-          <div class="col-sm-3">
-          </div>
-          <div class="col-sm-9">
-            <button id='player1' type="button" class="btn btn-primary"
-                    data-toggle="modal" data-target=".modal1">
-              Select Avatar
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="thumbnail">
+    <img src="/images/{{ image_url }}"/>
   </div>
+
+  <button type="button" class="select-avatar-btn btn btn-primary" data-player-number="{{ player_number }}">
+    Select Avatar
+  </button>
+</script>
+
+<script id="game-result-template" type="text/x-handlebars-template">
 </script>
 
 <script id="modal-template" type="text/x-handlebars-template">
-  <div class="modal1 modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
+  <div id="avatar-select-modal" class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -47,40 +23,53 @@
         </div>
 
         <div class="modal-body clearfix">
-          <span>
-            <a onclick="return false;" href="/profile?name=hellokitty1.png&player=1">
-              <img src="/images/hellokitty1.png"/>
-            </a>
-          </span>
-          <span>
-            <a onclick="return false;" href="/profile?name=helloKitty2.png&player=1">
-              <img src="/images/helloKitty2.png"/>
-            </a>
-          </span>
-          <span>
-            <a onclick="return false;" href="/profile?name=helloKitty3.png&player=1">
-              <img src="/images/helloKitty3.png"/>
-            </a>
-          </span>
-          <span>
-            <a onclick="return false;" href="/profile?name=minion.png&player=1">
-              <img src="/images/minion.png"/>
-            </a>
-          </span>
-          <span>
-            <a onclick="return false;" href="/profile?name=minion2.png&player=1">
-              <img src="/images/minion2.png"/>
-            </a>
-          </span>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <a onclick="return false;" data-img="hellokitty1.png" href="#">
+                  <img src="/images/hellokitty1.png"/>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <a onclick="return false;" data-img="helloKitty2.png" href="#">
+                  <img src="/images/helloKitty2.png"/>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <a onclick="return false;" data-img="helloKitty3.png" href="#">
+                  <img src="/images/helloKitty3.png"/>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <a onclick="return false;" data-img="minion.png" href="#">
+                  <img src="/images/minion.png"/>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <a onclick="return false;" data-img="minion2.png" href="#">
+                  <img src="/images/minion2.png"/>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <input id="saveP1" type="submit" class="btn btn-default" value="Save changes" name="submit" />
         </div>
       </div>
-      <!-- /.modal-content -->
     </div>
-    <!-- /.modal-dialog -->
   </div>
 </script>
