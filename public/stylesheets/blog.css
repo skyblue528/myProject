@@ -28,9 +28,6 @@ input[type="submit"]{
     margin: 5px 15px 5px;
 }
 
-img{
-    float: left;
-}
 .smallContainer{
     width: 320px;
     height:160px;
@@ -47,7 +44,8 @@ img{
     height: 35px;
     margin-bottom: 8px;
 }
-#body{
+
+#body {
     width: 400px;
     height: 120px;
     margin-bottom: 8px;
