@@ -1,4 +1,4 @@
-module.exports = function testBlueHorizontalCenterWin (browser, options)  {
+module.exports = function testBlueVerticalMiddleWin (browser, options)  {
 
     if (!options) options = {};
     if (!options.lbParam) options.lbParam = {vuSn: 1};
@@ -6,70 +6,26 @@ module.exports = function testBlueHorizontalCenterWin (browser, options)  {
     var baseUrl = "http://localhost:5000/";
     var acceptNextAlert = true;
     browser.get(addUrl(baseUrl, "/ttt"));
-    browser.elementById("0-0").click();
-    browser.elementById("0-1").click();
-    browser.elementById("1-1").click();
-    browser.elementById("1-2").click();
-    browser.elementById("2-2").click();
-    browser.elementById("2-5").click();
-    browser.elementById("5-5").click();
-    browser.elementById("5-8").click();
-    browser.elementById("8-8").click();
-    browser.elementById("8-7").click();
-    browser.elementById("7-7").click();
-    browser.elementById("7-6").click();
-    browser.elementById("6-6").click();
-    browser.elementById("6-3").click();
-    browser.elementById("3-3").click();
-    browser.elementById("3-0").click();
     browser.elementById("0-3").click();
-    browser.elementById("3-6").click();
-    browser.elementById("6-7").click();
-    browser.elementById("7-8").click();
-    browser.elementById("8-5").click();
-    browser.elementById("5-2").click();
-    browser.elementById("2-1").click();
-    browser.elementById("1-0").click();
-    browser.elementById("0-2").click();
-    browser.elementById("2-0").click();
-    browser.elementById("0-8").click();
-    browser.elementById("8-0").click();
-    browser.elementById("0-7").click();
-    browser.elementById("7-1").click();
-    browser.elementById("1-4").click();
-    browser.elementById("4-4").click();
-    browser.elementById("4-8").click();
-    browser.elementById("8-4").click();
-    browser.elementById("4-0").click();
-    browser.elementById("0-6").click();
-    browser.elementById("6-4").click();
-    browser.elementById("4-2").click();
-    browser.elementById("2-4").click();
-    browser.elementById("4-7").click();
-    browser.elementById("7-4").click();
-    browser.elementById("4-1").click();
-    browser.elementById("1-3").click();
     browser.elementById("3-4").click();
-    browser.elementById("4-3").click();
-    browser.elementById("3-2").click();
-    browser.elementById("2-3").click();
+    browser.elementById("4-4").click();
+    browser.elementById("4-0").click();
+    browser.elementById("0-1").click();
+    browser.elementById("1-3").click();
     browser.elementById("3-1").click();
-    browser.elementById("1-7").click();
-    browser.elementById("7-3").click();
-    browser.elementById("3-5").click();
-    browser.elementById("5-0").click();
-    browser.elementById("0-5").click();
-    browser.elementById("5-6").click();
-    browser.elementById("6-2").click();
-    browser.elementById("2-6").click();
-    browser.elementById("6-5").click();
+    browser.elementById("1-4").click();
+    browser.elementById("4-1").click();
+    browser.elementById("1-5").click();
     browser.elementById("5-4").click();
-    waitFor(browser, function(browser){
-        return browser.elementByCssSelector("#game-result-modal").isDisplayed();
-    }, 30000);
-
-    assert.strictEqual(browser.elementByCssSelector("#game-result-modal").isDisplayed(), true, 'Assertion error: Expected: true, Actual:' + browser.elementByCssSelector("#game-result-modal").isDisplayed());
-    browser.elementByCssSelector("div.modal-footer > button.btn.btn-primary").click();
+    browser.elementById("4-3").click();
+    browser.elementById("3-7").click();
+    browser.elementById("7-0").click();
+    browser.elementById("0-4").click();
+    browser.elementById("4-6").click();
+    browser.elementById("6-7").click();
+    browser.elementById("7-4").click();
+    browser.elementById("4-7").click();
+    browser.elementById("7-8").click();
 
 };
 

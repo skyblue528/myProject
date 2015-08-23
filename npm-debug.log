@@ -1,0 +1,157 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'selenium-standalone@latest',
+1 verbose cli   '-g' ]
+2 info using npm@2.10.1
+3 info using node@v0.12.4
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'selenium-standalone@latest', null ]
+7 verbose cache add spec selenium-standalone@latest
+8 silly cache add parsed spec { raw: 'selenium-standalone@latest',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'selenium-standalone',
+8 silly cache add   rawSpec: 'latest',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed selenium-standalone@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for selenium-standalone
+11 info addNameTag [ 'selenium-standalone', 'latest' ]
+12 silly mapToRegistry name selenium-standalone
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/selenium-standalone
+16 verbose addNameTag registry:https://registry.npmjs.org/selenium-standalone not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/selenium-standalone
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 11:59:16 AM
+20 verbose request id 366eeb6def969275
+21 verbose etag "CI6N8CEI9TCK4XKJ9NCLUDJBN"
+22 http request GET https://registry.npmjs.org/selenium-standalone
+23 http 304 https://registry.npmjs.org/selenium-standalone
+24 silly get cb [ 304,
+24 silly get   { date: 'Sun, 23 Aug 2015 18:54:58 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     etag: '"CI6N8CEI9TCK4XKJ9NCLUDJBN"',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-sjc3131-SJC',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1440356098.822711,VS0,VE38',
+24 silly get     vary: 'Accept' } ]
+25 verbose etag https://registry.npmjs.org/selenium-standalone from cache
+26 verbose get saving selenium-standalone to /Users/jkyaw/.npm/registry.npmjs.org/selenium-standalone/.cache.json
+27 silly addNameTag next cb for selenium-standalone with tag latest
+28 silly addNamed selenium-standalone@4.5.3
+29 verbose addNamed "4.5.3" is a plain semver version for selenium-standalone
+30 silly cache afterAdd selenium-standalone@4.5.3
+31 verbose afterAdd /Users/jkyaw/.npm/selenium-standalone/4.5.3/package/package.json not in flight; writing
+32 verbose afterAdd /Users/jkyaw/.npm/selenium-standalone/4.5.3/package/package.json written
+33 silly install resolved [ { name: 'selenium-standalone',
+33 silly install resolved     version: '4.5.3',
+33 silly install resolved     description: 'installs a `selenium-standalone` command line to install and start a standalone selenium server',
+33 silly install resolved     main: 'index.js',
+33 silly install resolved     scripts: { test: './bin/selenium-standalone install && mocha' },
+33 silly install resolved     bin:
+33 silly install resolved      { 'selenium-standalone': './bin/selenium-standalone',
+33 silly install resolved        'start-selenium': './bin/start-selenium' },
+33 silly install resolved     repository:
+33 silly install resolved      { type: 'git',
+33 silly install resolved        url: 'git+ssh://git@github.com/vvo/selenium-standalone.git' },
+33 silly install resolved     bugs: { url: 'https://github.com/vvo/selenium-standalone/issues' },
+33 silly install resolved     homepage: 'https://github.com/vvo/selenium-standalone',
+33 silly install resolved     author: { name: 'Vincent Voyer', email: 'vincent@zeroload.net' },
+33 silly install resolved     license: 'MIT',
+33 silly install resolved     dependencies:
+33 silly install resolved      { URIjs: '1.15.0',
+33 silly install resolved        async: '1.2.1',
+33 silly install resolved        commander: '2.6.0',
+33 silly install resolved        lodash: '3.9.3',
+33 silly install resolved        minimist: '1.1.0',
+33 silly install resolved        mkdirp: '0.5.0',
+33 silly install resolved        progress: '1.1.8',
+33 silly install resolved        request: '2.51.0',
+33 silly install resolved        unzip: '0.1.11',
+33 silly install resolved        which: '1.1.1' },
+33 silly install resolved     devDependencies: { mocha: '2.1.0' },
+33 silly install resolved     contributors: [ [Object], [Object] ],
+33 silly install resolved     gitHead: '6b2b9ffbf6f72ffc473cffd3542fcd589843cb7d',
+33 silly install resolved     _id: 'selenium-standalone@4.5.3',
+33 silly install resolved     _shasum: '1dc0c7ed092cdfcf98d0b02c1066fc29df9991d3',
+33 silly install resolved     _from: 'selenium-standalone@latest',
+33 silly install resolved     _npmVersion: '2.11.2',
+33 silly install resolved     _nodeVersion: '0.12.5',
+33 silly install resolved     _npmUser: { name: 'vvo', email: 'vincent.voyer@gmail.com' },
+33 silly install resolved     maintainers: [ [Object] ],
+33 silly install resolved     dist:
+33 silly install resolved      { shasum: '1dc0c7ed092cdfcf98d0b02c1066fc29df9991d3',
+33 silly install resolved        tarball: 'http://registry.npmjs.org/selenium-standalone/-/selenium-standalone-4.5.3.tgz' },
+33 silly install resolved     directories: {},
+33 silly install resolved     _resolved: 'https://registry.npmjs.org/selenium-standalone/-/selenium-standalone-4.5.3.tgz',
+33 silly install resolved     readme: 'ERROR: No README data found!' } ]
+34 info install selenium-standalone@4.5.3 into /usr/local/lib
+35 info installOne selenium-standalone@4.5.3
+36 verbose installOne of selenium-standalone to /usr/local/lib not in flight; installing
+37 verbose lock using /Users/jkyaw/.npm/_locks/selenium-standalone-8f13c5187fca8778.lock for /usr/local/lib/node_modules/selenium-standalone
+38 silly install write writing selenium-standalone 4.5.3 to /usr/local/lib/node_modules/selenium-standalone
+39 verbose unbuild lib/node_modules/selenium-standalone
+40 info preuninstall selenium-standalone@4.5.3
+41 info uninstall selenium-standalone@4.5.3
+42 verbose unbuild rmStuff selenium-standalone@4.5.3 from /usr/local/lib/node_modules
+43 silly gentlyRm /usr/local/bin/selenium-standalone is being gently removed
+44 silly gentlyRm verifying /usr/local is an npm working directory
+45 silly gentlyRm /usr/local/bin/start-selenium is being gently removed
+46 silly gentlyRm verifying /usr/local is an npm working directory
+47 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+48 silly gentlyRm deletion target /usr/local/bin/selenium-standalone is under /usr/local
+49 verbose gentlyRm vacuuming from /usr/local/bin/selenium-standalone up to /usr/local
+50 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+51 silly gentlyRm deletion target /usr/local/bin/start-selenium is under /usr/local
+52 verbose gentlyRm vacuuming from /usr/local/bin/start-selenium up to /usr/local
+53 silly vacuum-fs removing /usr/local/bin/selenium-standalone
+54 silly vacuum-fs removing /usr/local/bin/start-selenium
+55 verbose unlock done using /Users/jkyaw/.npm/_locks/selenium-standalone-8f13c5187fca8778.lock for /usr/local/lib/node_modules/selenium-standalone
+56 verbose stack Error: EACCES, unlink '/usr/local/bin/selenium-standalone'
+56 verbose stack     at Error (native)
+57 verbose cwd /Users/jkyaw/node-js-getting-started
+58 error Darwin 14.3.0
+59 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "selenium-standalone@latest" "-g"
+60 error node v0.12.4
+61 error npm  v2.10.1
+62 error path /usr/local/bin/selenium-standalone
+63 error code EACCES
+64 error errno -13
+65 error Error: EACCES, unlink '/usr/local/bin/selenium-standalone'
+65 error     at Error (native)
+65 error  { [Error: EACCES, unlink '/usr/local/bin/selenium-standalone']
+65 error   errno: -13,
+65 error   code: 'EACCES',
+65 error   path: '/usr/local/bin/selenium-standalone' }
+66 error Please try running this command again as root/Administrator.
+67 verbose exit [ -13, true ]
+68 verbose unbuild lib/node_modules/selenium-standalone
+69 info preuninstall selenium-standalone@4.5.3
+70 info uninstall selenium-standalone@4.5.3
+71 verbose unbuild rmStuff selenium-standalone@4.5.3 from /usr/local/lib/node_modules
+72 silly gentlyRm /usr/local/bin/selenium-standalone is being gently removed
+73 silly gentlyRm verifying /usr/local is an npm working directory
+74 silly gentlyRm /usr/local/bin/start-selenium is being gently removed
+75 silly gentlyRm verifying /usr/local is an npm working directory
+76 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+77 silly gentlyRm deletion target /usr/local/bin/selenium-standalone is under /usr/local
+78 verbose gentlyRm vacuuming from /usr/local/bin/selenium-standalone up to /usr/local
+79 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+80 silly gentlyRm deletion target /usr/local/bin/start-selenium is under /usr/local
+81 verbose gentlyRm vacuuming from /usr/local/bin/start-selenium up to /usr/local
+82 silly vacuum-fs removing /usr/local/bin/selenium-standalone
+83 silly vacuum-fs removing /usr/local/bin/start-selenium
+84 error error rolling back Error: EACCES, unlink '/usr/local/bin/selenium-standalone'
+84 error error rolling back     at Error (native)
+84 error error rolling back  { [Error: EACCES, unlink '/usr/local/bin/selenium-standalone']
+84 error error rolling back   errno: -13,
+84 error error rolling back   code: 'EACCES',
+84 error error rolling back   path: '/usr/local/bin/selenium-standalone' }
