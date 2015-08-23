@@ -2,11 +2,14 @@ var total = 0;
 
 $(document).ready(function () {
     for (var index = 0; index < 9; index++) {
-        $('.bigBoard').append('<div class="col-xs-4"><div class="row board"></div></div>')
-    }
+        var $board = $('<div class="col-xs-4"><div class="row board"></div></div>');
 
-    for (var i = 0; i < 9; i++) {
-        $('.board').append('<div class="piece col-xs-4"></div>');
+        for (var j = 0; j < 9; j++) {
+            var id = index + '-' + j;
+            $board.find('.board').append('<div class="piece col-xs-4" id="' + id + '"></div>');
+        }
+
+        $('.bigBoard').append($board)
     }
 
     $('.piece').on('click', function () {
