@@ -32,8 +32,8 @@ app.get('/', function(request, response) {
   response.render('pages/home');
 });
 
-app.get('/index', function(request, response) {
-  response.render('pages/index');
+app.get('/ttt', function(request, response) {
+  response.render('pages/ttt');
 });
 
 app.get('/about', function(request, response) {
