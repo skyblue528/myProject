@@ -5,6 +5,8 @@ var client  = wdSync.remote(); // phantomjs default wd port
 var browser = client.browser;
 var sync    = client.sync;
 
+var oneTest = process.argv[2];
+
 sync(function(){
     console.log("server status:", browser.status());
 
@@ -15,8 +17,11 @@ sync(function(){
 
     for (var i = 0; i < files.length; i++) {
         var jsFile = exportDir + files[i];
-        var test = require(jsFile);
-        test(browser);
+        if (files[i] == oneTest || oneTest == undefined) {
+            console.log("Running test case: ", files[i]);
+            var test = require(jsFile);
+            test(browser);
+        }
     }
 
     browser.quit();
