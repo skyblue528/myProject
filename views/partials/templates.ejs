@@ -9,6 +9,12 @@
   <button type="button" class="select-avatar-btn btn btn-primary" data-player-number="{{ player_number }}">
     Select Avatar
   </button>
+
+  <style>
+    .board.player{{ player_number }} {
+      background: transparent url("/images/{{ image_url }}") no-repeat center center;
+    }
+  </style>
 </script>
 
 <script id="game-result-template" type="text/x-handlebars-template">
