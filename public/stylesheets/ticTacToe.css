@@ -12,11 +12,25 @@
     background:#778899 url(/images/logo.png) top left no-repeat;
 }
 
-.bigBoard{
-}
-
 .board {
     border: 1px solid black;
+    padding: 20px;
+}
+
+.board.top, .piece.top {
+    border-top: 0px;
+}
+
+.board.bottom, .piece.bottom {
+    border-bottom: 0px;
+}
+
+.board.right, .piece.right {
+    border-right: 0px;
+}
+
+.board.left, .piece.left {
+    border-left: 0px;
 }
 
 .board.player1{
@@ -30,7 +44,7 @@
 .piece {
     height: 50px;
     border: 1px solid black;
-    padding: 0px;
+    padding: 20px;
 }
 
 @media (max-width: 600px) {
@@ -53,8 +67,17 @@
     background-color: #ff0000;
     opacity:0.5;
 }
-
 .piece.player2 {
     background-color:#0000ff;
     opacity: 0.5;
+    content: 'O';
 }
+
+/**
+.piece.player1::before {
+    content: 'X';
+}
+
+.piece.player2::after {
+    content: '0';
+}*/

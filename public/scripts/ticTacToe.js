@@ -1,12 +1,36 @@
 var total = 0;
 
+function addPositionClass($board, index) {
+    var i = index % 3;
+    var j = Math.floor(index / 3);
+
+    if (j == 0) {
+        $board.addClass('top');
+    }
+
+    if (j == 2) {
+        $board.addClass('bottom');
+    }
+
+    if (i == 2) {
+        $board.addClass('right');
+    }
+
+    if (i == 0) {
+        $board.addClass('left');
+    }
+}
+
 $(document).ready(function () {
     for (var index = 0; index < 9; index++) {
-        var $board = $('<div class="col-xs-4"><div class="row board"></div></div>');
+        var $board = $('<div class="col-xs-4 board" ></div>');
+        addPositionClass($board, index);
 
         for (var j = 0; j < 9; j++) {
             var id = index + '-' + j;
-            $board.find('.board').append('<div class="piece col-xs-4" id="' + id + '"></div>');
+            var $piece = $('<div class="piece col-xs-4" id="' + id + '"></div>');
+            $board.append($piece);
+            addPositionClass($piece, j);
         }
 
         $('.bigBoard').append($board)
@@ -195,10 +219,10 @@ function toggleBoards(pieceIndex) {
         if ($('.bigBoard').hasClass('foundWinner')) {
             $board.addClass('disabled');
         } else if ((pieceIndex) == index) {
-            // if this board is full - then enable the rest..
+            // if this board is full - then enable the rest.
             var board = convertToArray($board);
             if (isFull(board)) {
-                // Enable the others..
+                // Enable the others.
                 enableAll = true;
             }
             else {
