@@ -25,6 +25,12 @@ module.exports = function testRedHorizontalBottomWin (browser, options)  {
     browser.elementById("8-4").click();
     browser.elementById("4-8").click();
     browser.elementById("8-5").click();
+    waitFor(browser, function(browser){
+        return browser.elementByCssSelector("#game-result-modal").isDisplayed();
+    }, 30000);
+
+    assert.strictEqual(browser.elementByCssSelector("#game-result-modal").isDisplayed(), true, 'Assertion error: Expected: true, Actual:' + browser.elementByCssSelector("#game-result-modal").isDisplayed());
+    browser.elementByCssSelector("div.modal-footer > button.btn.btn-primary").click();
 
 };
 
