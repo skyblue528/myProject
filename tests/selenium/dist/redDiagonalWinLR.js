@@ -31,6 +31,12 @@ module.exports = function testRedDiagonalWinLR (browser, options)  {
     browser.elementById("2-8").click();
     browser.elementById("8-6").click();
     browser.elementById("6-6").click();
+    waitFor(browser, function(browser){
+        return browser.elementByCssSelector("#game-result-modal").isDisplayed();
+    }, 30000);
+
+    assert.strictEqual(browser.elementByCssSelector("#game-result-modal").isDisplayed(), true, 'Assertion error: Expected: true, Actual:' + browser.elementByCssSelector("#game-result-modal").isDisplayed());
+    browser.elementByCssSelector("div.modal-footer > button.btn.btn-primary").click();
 
 };
 

@@ -26,6 +26,12 @@ module.exports = function testBlueVerticalMiddleWin (browser, options)  {
     browser.elementById("7-4").click();
     browser.elementById("4-7").click();
     browser.elementById("7-8").click();
+    waitFor(browser, function(browser){
+        return browser.elementByCssSelector("#game-result-modal").isDisplayed();
+    }, 30000);
+
+    assert.strictEqual(browser.elementByCssSelector("#game-result-modal").isDisplayed(), true, 'Assertion error: Expected: true, Actual:' + browser.elementByCssSelector("#game-result-modal").isDisplayed());
+    browser.elementByCssSelector("div.modal-footer > button.btn.btn-primary").click();
 
 };
 

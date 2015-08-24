@@ -71,7 +71,6 @@ module.exports = function testDraw (browser, options)  {
     browser.elementById("4-5").click();
     browser.elementById("5-4").click();
     browser.elementById("4-6").click();
-    /* ERROR: Caught exception [ERROR: Unsupported command [selectWindow | null | ]] */
     browser.elementById("2-6").click();
     browser.elementById("6-1").click();
     browser.elementById("1-8").click();
@@ -97,7 +96,12 @@ module.exports = function testDraw (browser, options)  {
     browser.elementById("2-8").click();
     browser.elementById("8-2").click();
     browser.elementById("7-5").click();
-    browser.elementById("5-7").click();
+    waitFor(browser, function(browser){
+        return browser.elementByCssSelector("#game-result-modal").isDisplayed();
+    }, 30000);
+
+    assert.strictEqual(browser.elementByCssSelector("#game-result-modal").isDisplayed(), true, 'Assertion error: Expected: true, Actual:' + browser.elementByCssSelector("#game-result-modal").isDisplayed());
+    browser.elementByCssSelector("div.modal-footer > button.btn.btn-primary").click();
 
 };
 
