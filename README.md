@@ -41,3 +41,10 @@ You can convert the html tests created in selenium IDE to javascript tests case 
 ```sh
 $ node tests/selenium/convert.js
 ```
+
+## To do list
+
+- keep track of wins for players
+- play over internet
+- add login
+- refactor javascript to use backbone model
