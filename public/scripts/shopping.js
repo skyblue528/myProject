@@ -308,6 +308,14 @@ var main= function(){
         nextDot.addClass('active-dot');
     });
 
+    $('.dot').click(function() {
+        $('.active-dot').removeClass('active-dot');
+        $(this).addClass('active-dot');
+
+        var currentPage = $(this).index();;
+        loadItems(currentPage);
+    })
+
     $('.arrow-prev').click(function(){
         var currentDot = $('.active-dot');
         var prevDot = currentDot.prev();
@@ -316,7 +324,7 @@ var main= function(){
             prevDot = $('.dot').last();
         }
 
-        var currentPage = prevDot.index();
+        var currentPage = prevDot.index();;
         loadItems(currentPage);
 
         currentDot.removeClass('active-dot');

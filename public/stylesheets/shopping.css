@@ -68,6 +68,10 @@ body{
     background-color: #bbbcbc;
 }
 
+.dot {
+    cursor: pointer;
+}
+
 .product-image img {
     height: 205px;
 }
