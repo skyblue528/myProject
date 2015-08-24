@@ -1,0 +1,6 @@
+{
+  "name": "julia-binary",
+  "dependencies": {
+    "octicons": "*"
+  }
+}

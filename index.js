@@ -22,6 +22,7 @@ app.use(multer({ dest: './uploads/',
 
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
+app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 app.use(express.static(__dirname + '/uploads'));
 
 // views is directory for all template files
