@@ -57,6 +57,18 @@
     }
 }
 
+@media (max-width: 480px) {
+    .container {
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+
+    .bigBoard {
+        min-width: 420px;
+    }
+
+}
+
 @media (min-width: 1000px) {
     .piece {
         height: 70px;
