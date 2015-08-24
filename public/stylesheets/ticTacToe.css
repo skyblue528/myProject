@@ -14,7 +14,7 @@
 
 .board {
     border: 1px solid black;
-    padding: 20px;
+    padding: 10px;
 }
 
 .board.top, .piece.top {
@@ -51,11 +51,19 @@
     .piece {
         height: 40px;
     }
+
+    .board {
+        padding: 5px;
+    }
 }
 
 @media (min-width: 1000px) {
     .piece {
         height: 70px;
+    }
+
+    .board {
+        padding: 20px;
     }
 }
 
