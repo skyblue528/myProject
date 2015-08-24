@@ -12,7 +12,8 @@
     "express": "~4.9.x",
     "multer": "~0.1.6",
     "mv": "*",
-    "cp": "*"
+    "cp": "*",
+    "bower": "*"
   },
   "devDependencies": {
     "selenium-html-js-converter": "*",
